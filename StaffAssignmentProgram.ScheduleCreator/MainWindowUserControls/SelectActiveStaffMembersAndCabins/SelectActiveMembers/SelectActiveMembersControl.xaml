@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAndCabins.SelectActiveMembers.SelectActiveMembersControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+			 xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+			 mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="2*"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<Rectangle Grid.Column="1" Grid.RowSpan="3" Fill="Gray" Width="1" Margin="3,0"/>
+		<Label HorizontalAlignment="Left" Content="{Binding ListName}" Grid.Row="0" Grid.Column="0" FontSize="16" FontWeight="Bold"/>
+		<Grid Grid.Column="0" Grid.Row="1" IsEnabled="False">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="5*"/>
+				<ColumnDefinition Width="3*"/>
+			</Grid.ColumnDefinitions>
+			<Label Content="Search:" Grid.Column="0"/>
+			<TextBox x:Name="StaffSearch" Grid.Column="1" Text="{Binding StaffSearchText, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+			<ComboBox x:Name="StaffSearchType" Grid.Column="2" SelectedValue="{Binding StaffSearchBy, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		</Grid>
+
+		<Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" Grid.Column="0">
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<ListView x:Name="MemberList" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="3" VerticalAlignment="Stretch"
+                    SelectedItem="{Binding SelectedMember, Mode=TwoWay}"
+                    ItemsSource="{Binding SelectableMembers}" 
+					SelectionMode="Single"
+					>
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="SelectionChanged">
+						<cmd:EventToCommand Command="{Binding DataContext.SelectionChanged, 
+							RelativeSource={RelativeSource Mode=FindAncestor, 
+							AncestorType={x:Type Grid}, AncestorLevel=2}}"
+							PassEventArgsToCommand="True"/>
+					</i:EventTrigger>
+
+					<i:EventTrigger EventName="MouseDoubleClick">
+						<cmd:EventToCommand Command="{Binding DataContext.DoubleClickedItem, 
+							RelativeSource={RelativeSource Mode=FindAncestor, 
+							AncestorType={x:Type Grid}, AncestorLevel=2}}"
+							PassEventArgsToCommand="True"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+				<ListView.InputBindings>
+					<KeyBinding Key="Return" Command="{Binding StaffSetMemberActive}"/>
+				</ListView.InputBindings>
+				<ListView.View>
+					<GridView>
+						<GridViewColumn Header="Active">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<CheckBox IsChecked="{Binding IsSelected}"/>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="280"/>
+						<!--<GridViewColumn>
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<ComboBox HorizontalAlignment="Stretch" 
+										ItemsSource="{Binding Path=DataContext.CabinSchedules, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"
+										SelectedItem="{Binding Schedule, Mode=TwoWay}"
+										DisplayMemberPath="Name" Width="150"
+										/>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>-->
+					</GridView>
+				</ListView.View>
+			</ListView>
+			<StackPanel Grid.Column="3" Grid.Row="0" VerticalAlignment="Center">
+				<Button x:Name="StaffSelectAll" Content="Select All"  Command="{Binding SelectAll}"/>
+				<Button x:Name="StaffDeselectAll" Content="Deselect All"  Command="{Binding SelectNone}"/>
+				<Button x:Name="StaffGoToFirst" Content="First" Command="{Binding GoToFirst}"/>
+				<Button x:Name="StaffGoToLast" Content="Last" Command="{Binding GoToLast}"/>
+			</StackPanel>
+			<Button Command="{Binding CreateNewMember}" Content="New" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" Margin="3"/>
+			<Button CommandParameter="{Binding ElementName=MemberList, Path=SelectedItem}"  Command="{Binding EditMember}" Content="Edit" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" Margin="3"/>
+			<Button CommandParameter="{Binding ElementName=MemberList, Path=SelectedItem}" Command="{Binding DeleteMember}" Content="Delete" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="2" VerticalAlignment="Stretch" Margin="3"/>
+		</Grid>
+	</Grid>
+</UserControl>

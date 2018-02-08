@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.SetMiscAssignmentsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments"
+			 xmlns:EveningAssignment="clr-namespace:SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignment"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<TabControl Grid.Row="0">
+			<TabItem Header="Night Off" Visibility="Visible">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding MondayNightOff}" Grid.Column="0"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding TuesdayNightOff}" Grid.Column="1"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding WednesdayNightOff}" Grid.Column="2"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding ThursdayNightOff}" Grid.Column="3"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Campfires" Visibility="Visible">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding SundayCampfire}" Grid.Column="0"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding MondayCampfire}" Grid.Column="1"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding TuesdayCampfire}" Grid.Column="2"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding WednesdayCampfire}" Grid.Column="3"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding ThursdayCampfire}" Grid.Column="4"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding FridayCampfire}" Grid.Column="5"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Quiet Cabin" Visibility="Visible">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding SundayQuietCabin}" Grid.Column="0"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding MondayQuietCabin}" Grid.Column="1"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding TuesdayQuietCabin}" Grid.Column="2"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding WednesdayQuietCabin}" Grid.Column="3"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding ThursdayQuietCabin}" Grid.Column="4"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding FridayQuietCabin}" Grid.Column="5"/>
+				</Grid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</UserControl>

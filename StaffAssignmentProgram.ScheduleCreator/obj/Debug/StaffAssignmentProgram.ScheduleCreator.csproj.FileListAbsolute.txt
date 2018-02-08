@@ -1,0 +1,118 @@
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.exe.config
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.exe
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.SqlServer.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.EF6.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.Linq.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Windows.Interactivity.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.SqlServer.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.xml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.dll.config
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.csprojResolveAssemblyReference.cache
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindow.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ProgramAreaSettings\ProgramAreaSettingsControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ReviewSelectedStaffAndCabins\ReviewSelectedStaffAndCabinsControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveMembers\SelectActiveMembersControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveStaffMembersAndCabinsControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\Assignment\EveningAssignmentControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\App.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator_MarkupCompile.cache
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator_MarkupCompile.lref
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindow.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ProgramAreaSettings\ProgramAreaSettingsControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ReviewSelectedStaffAndCabins\ReviewSelectedStaffAndCabinsControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveMembers\SelectActiveMembersControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveStaffMembersAndCabinsControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\Assignment\EveningAssignmentControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.g.resources
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.csproj.GenerateResource.Cache
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.exe
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.Properties.Resources.resources
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.exe.config
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.exe
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.xml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.csprojResolveAssemblyReference.cache
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveMembers\SelectActiveMembersControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindow.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ProgramAreaSettings\ProgramAreaSettingsControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ReviewSelectedStaffAndCabins\ReviewSelectedStaffAndCabinsControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveMembers\SelectActiveMembersControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveStaffMembersAndCabinsControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\Assignment\EveningAssignmentControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\App.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator_MarkupCompile.cache
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator_MarkupCompile.lref
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindow.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ProgramAreaSettings\ProgramAreaSettingsControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\ReviewSelectedStaffAndCabins\ReviewSelectedStaffAndCabinsControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveStaffMembersAndCabinsControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\Assignment\EveningAssignmentControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.baml
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.g.resources
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.Properties.Resources.resources
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.csproj.GenerateResource.Cache
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.exe
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.pdb

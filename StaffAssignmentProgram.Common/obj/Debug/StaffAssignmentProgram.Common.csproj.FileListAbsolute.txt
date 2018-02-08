@@ -1,0 +1,10 @@
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.dll
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.csprojResolveAssemblyReference.cache
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.pdb
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.csprojResolveAssemblyReference.cache
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.dll
+C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.pdb

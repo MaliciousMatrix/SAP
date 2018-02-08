@@ -1,0 +1,14 @@
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe.config
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csprojResolveAssemblyReference.cache
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\App.g.cs
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.cache
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.lref
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.baml
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.g.resources
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.Properties.Resources.resources
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
+M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
