@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SAP.Common;
 using System.Collections.ObjectModel;
+using SAP.DataBaseHandler;
 
 namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAndCabins
 {
@@ -33,13 +34,14 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAnd
 			base.Initialize(scheduleCreationInfo);
 
 			StaffMembers = new ObservableCollection<StaffMemberViewModel>();
-			foreach (var staff in DataHandler.GetStaffMembers())
+			var members = DataBaseAccess.GetStaffMembers();
+			foreach (var staff in members)
 			{
 				StaffMembers.Add(new StaffMemberViewModel(staff));
 			}
 
 			Cabins = new ObservableCollection<CabinViewModel>();
-			foreach (var cabin in DataHandler.GetCabins())
+			foreach (var cabin in DataBaseAccess.GetCabins())
 			{
 				Cabins.Add(new CabinViewModel(cabin));
 			}
@@ -118,11 +120,11 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAnd
 
 		private StaffMemberViewModel CreateNewStaffMember()
 		{
-			AddEditStaff.AddEditStaff aes = new AddEditStaff.AddEditStaff(DataHandler.GetStaffPreferences(-1));
+			AddEditStaff.AddEditStaff aes = new AddEditStaff.AddEditStaff(DataBaseAccess.GetStaffPreferences(-1));
 			aes.ShowDialog();
 			if (aes.SaveStaff)
 			{
-				DataHandler.AddNewStaff(aes.Staff.WrappedStaffMember);
+				DataBaseAccess.AddNewStaff(aes.Staff.WrappedStaffMember);
 				return aes.Staff;
 			}
 
@@ -135,7 +137,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAnd
 			aes.ShowDialog();
 			if (aes.SaveStaff)
 			{
-				DataHandler.UpdateStaffMember(aes.Staff);
+				DataBaseAccess.UpdateStaffMember(aes.Staff.WrappedStaffMember);
 				return aes.Staff;
 			}
 			return null;
@@ -143,7 +145,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAnd
 
 		private void DeleteStaffMember(StaffMemberViewModel staffMember)
 		{
-			DataHandler.DeleteStaff(staffMember);
+			DataBaseAccess.DeleteStaff(staffMember.WrappedStaffMember);
 		}
 
 		#endregion Staff CUD Methods

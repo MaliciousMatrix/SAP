@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffAssignmentProgram.Sche
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffAssignmentProgram.ScheduleEditor", "StaffAssignmentProgram.ScheduleEditor\StaffAssignmentProgram.ScheduleEditor.csproj", "{80925EAC-2DFA-4E02-BAB2-6183FD2643A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseHandler", "DataBaseHandler\DataBaseHandler.csproj", "{757B8D09-6DAD-45F8-AAD1-B7ACF37F9BD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{80925EAC-2DFA-4E02-BAB2-6183FD2643A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80925EAC-2DFA-4E02-BAB2-6183FD2643A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80925EAC-2DFA-4E02-BAB2-6183FD2643A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757B8D09-6DAD-45F8-AAD1-B7ACF37F9BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757B8D09-6DAD-45F8-AAD1-B7ACF37F9BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757B8D09-6DAD-45F8-AAD1-B7ACF37F9BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757B8D09-6DAD-45F8-AAD1-B7ACF37F9BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

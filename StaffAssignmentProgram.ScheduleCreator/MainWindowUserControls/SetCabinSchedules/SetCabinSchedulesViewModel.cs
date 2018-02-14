@@ -1,4 +1,5 @@
 ﻿using SAP.Common;
+using SAP.DataBaseHandler;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -29,7 +30,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetCabinSchedules
 
 		public override void Initialize(ScheduleCreationInfo scheduleCreationInfo)
 		{
-			CabinSchedules = new ObservableCollection<CabinSchedule>(DataHandler.GetCabinSchedules());
+			CabinSchedules = new ObservableCollection<CabinSchedule>(DataBaseAccess.GetCabinSchedules());
 			ActiveCabins = new ObservableCollection<CabinViewModel>(scheduleCreationInfo.ActiveCabins.Select(x => new CabinViewModel(x)));
 
 			foreach(CabinViewModel cabin in ActiveCabins)

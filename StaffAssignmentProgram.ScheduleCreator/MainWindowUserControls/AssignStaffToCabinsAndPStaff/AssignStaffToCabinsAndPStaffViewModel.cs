@@ -1,4 +1,5 @@
 ﻿using SAP.Common;
+using SAP.DataBaseHandler;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -35,7 +36,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.AssignStaffToCabinsAndPStaf
 
 			_activeCabins.Insert(0, Cabin.NoCabin);
 
-			_activeWorkAreas = DataHandler.GetWorkAreas().ToObservableCollection();
+			_activeWorkAreas = DataBaseAccess.GetWorkAreas().ToObservableCollection();
 			_activeWorkAreas.Insert(0, Location.None);
 
 			RaisePropertyChanged(nameof(ActiveStaffMembers));

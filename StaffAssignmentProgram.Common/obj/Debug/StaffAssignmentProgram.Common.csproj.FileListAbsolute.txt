@@ -8,3 +8,8 @@ C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\bin\Debu
 C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.csprojResolveAssemblyReference.cache
 C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.dll
 C:\Users\W\Desktop\StaffAssignmentProgram\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.pdb
+M:\Documents\sap\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.dll
+M:\Documents\sap\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.pdb
+M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.csprojResolveAssemblyReference.cache
+M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.dll
+M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.pdb
