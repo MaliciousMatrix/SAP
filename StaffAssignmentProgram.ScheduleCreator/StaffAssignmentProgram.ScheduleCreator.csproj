@@ -119,8 +119,6 @@
     <Compile Include="MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflictsViewModel.cs" />
     <Compile Include="StaffMemberViewModel.cs" />
     <Compile Include="ViewModelBase.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
