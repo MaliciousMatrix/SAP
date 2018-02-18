@@ -1,0 +1,7 @@
+M:\Documents\sap\ScheduleGenerationEngine\bin\Debug\ScheduleGenerationEngine.dll
+M:\Documents\sap\ScheduleGenerationEngine\bin\Debug\ScheduleGenerationEngine.pdb
+M:\Documents\sap\ScheduleGenerationEngine\bin\Debug\StaffAssignmentProgram.Common.dll
+M:\Documents\sap\ScheduleGenerationEngine\bin\Debug\StaffAssignmentProgram.Common.pdb
+M:\Documents\sap\ScheduleGenerationEngine\obj\Debug\ScheduleGenerationEngine.csprojResolveAssemblyReference.cache
+M:\Documents\sap\ScheduleGenerationEngine\obj\Debug\ScheduleGenerationEngine.dll
+M:\Documents\sap\ScheduleGenerationEngine\obj\Debug\ScheduleGenerationEngine.pdb

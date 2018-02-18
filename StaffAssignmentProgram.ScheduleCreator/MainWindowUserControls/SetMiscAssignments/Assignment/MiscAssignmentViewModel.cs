@@ -25,6 +25,11 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
         }
 
         private Activity _activity;
+		public Activity AssignedActivity
+		{
+			get => _activity;
+		}
+
         private int _size;
 
         private ObservableCollection<StaffWrapper> _comboBoxValues;
@@ -120,6 +125,17 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
         {
             return false;
         }
+
+		public void Assign()
+		{
+			foreach(var item in ComboBoxValues)
+			{
+				if (item.StaffMember.IsRealStaffMember())
+				{
+					item.StaffMember.Activities.Add(_activity);
+				}
+			}
+		}
 
 		public class StaffWrapper : ViewModelBase
 		{

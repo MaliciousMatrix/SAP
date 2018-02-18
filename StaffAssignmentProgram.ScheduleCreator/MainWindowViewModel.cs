@@ -24,7 +24,6 @@ namespace SAP.ScheduleCreator
 			InitDataFromDb();
 			_screenObjects = InitScreenObjects();
 			CurrentTab = 0;
-
 		}
 
 		private ScreenViewModelBase _currentScreen;

@@ -18,6 +18,7 @@ namespace SAP.Common
 			Email = email;
 			InitAfternoonAssignment();
 			Preferences = preferences;
+			Activities = new List<Activity>();
 		}
 
         private StaffMember(string name)
@@ -88,6 +89,11 @@ namespace SAP.Common
 		public bool HasCabin()
 		{
 			return AssignedCabin != null && !AssignedCabin.Equals(Cabin.NoCabin);
+		}
+
+		public bool IsRealStaffMember()
+		{
+			return IdNumber >= 0;
 		}
         
         public static StaffMember None = new StaffMember("None");
