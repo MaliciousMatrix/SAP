@@ -34,7 +34,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.AssignStaffToCabinsAndPStaf
 			_activeStaffMembers = scheduleCreationInfo.ActiveStaffMembers.ToObservableCollection();
 			_activeCabins = scheduleCreationInfo.ActiveCabins.ToObservableCollection();
 
-			_activeCabins.Insert(0, Cabin.NoCabin);
+			_activeCabins.Insert(0, Cabin.None);
 
 			_activeWorkAreas = DataBaseAccess.GetWorkAreas().ToObservableCollection();
 			_activeWorkAreas.Insert(0, Location.None);

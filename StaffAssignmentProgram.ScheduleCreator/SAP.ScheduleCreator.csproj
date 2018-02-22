@@ -91,7 +91,7 @@
     <Compile Include="CabinViewModel.cs" />
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="ISelectable.cs" />
+    <Compile Include="ISelectableViewModel.cs" />
     <Compile Include="MainWindowUserControls\ProgramAreaSettings\LocationViewModel.cs" />
     <Compile Include="MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.xaml.cs">
       <DependentUpon>AddEditStaff.xaml</DependentUpon>

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace SAP.Common
 {
-	public class StaffMember
+	public class StaffMember : IMember
 	{
-		public StaffMember(string fullName, int idNumber, DateTime birthday, string phoneNumber, string email, List<Preference> preferences, string nickName = "")
+		public StaffMember(string fullName, int idNumber, DateTime birthday, string phoneNumber, string email, List<Preference> preferences, string nickName = null)
 		{
 			FullName = fullName;
 			IdNumber = idNumber;
 			Birthday = birthday;
-			NickName = nickName;
+			NickName = nickName ?? String.Empty;
 			PhoneNumber = phoneNumber;
 			Email = email;
 			InitAfternoonAssignment();
@@ -21,11 +21,11 @@ namespace SAP.Common
 			Activities = new List<Activity>();
 		}
 
-        private StaffMember(string name)
+        private StaffMember(string name, int id)
         {
             FullName = name;
             name = null;
-            IdNumber = -1;
+			IdNumber = id;
         }
 
 		public string Name
@@ -45,7 +45,7 @@ namespace SAP.Common
 		public string PhoneNumber { get; set; }
 		public DateTime Birthday { get; set; }
 		public string[,] AfternoonAssignment { get; set; }
-		public Cabin AssignedCabin { get; set; } = Cabin.NoCabin;
+		public Cabin AssignedCabin { get; set; } = Cabin.None;
 		public Location PStaffAssignment { get; set; } = Location.None;
 		public List<Preference> Preferences { get; set; }
 		public List<Activity> Activities { get; set; }
@@ -88,15 +88,15 @@ namespace SAP.Common
 
 		public bool HasCabin()
 		{
-			return AssignedCabin != null && !AssignedCabin.Equals(Cabin.NoCabin);
+			return AssignedCabin != null && !AssignedCabin.Equals(Cabin.None);
 		}
 
-		public bool IsRealStaffMember()
+		public bool IsRealMember()
 		{
 			return IdNumber >= 0;
 		}
         
-        public static StaffMember None = new StaffMember("None");
-        public static StaffMember Random = new StaffMember("Random");
+        public static StaffMember None = new StaffMember("None", -1);
+        public static StaffMember Random = new StaffMember("Random", -2);
 	}
 }

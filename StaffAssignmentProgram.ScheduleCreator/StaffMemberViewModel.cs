@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SAP.ScheduleCreator
 {
-	public class StaffMemberViewModel : ViewModelBase, ISelectable
+	public class StaffMemberViewModel : ViewModelBase, ISelectableViewModel
 	{
 		public StaffMemberViewModel(StaffMember staffMember, bool isSelected = false)
 		{

@@ -31,50 +31,43 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 		public override void Initialize(ScheduleCreationInfo scheduleCreationInfo)
 		{
 			base.Initialize(scheduleCreationInfo);
-            ActiveStaffMembers = new ObservableCollection<StaffMember>(scheduleCreationInfo.ActiveStaffMembers);
-            ActiveStaffMembers.Insert(0,StaffMember.Random);
+			_activeStaffMembers = new List<StaffMember>() { StaffMember.Random }.Concat(scheduleCreationInfo.ActiveStaffMembers).ToList();
+			_activeCabins = new List<Cabin>() { Cabin.Random }.Concat(scheduleCreationInfo.ActiveCabins).ToList();
+				
             InitCampfires();
 			InitQueitCabinPatrols();
 			InitNightsOff();
+
+			SundayFlagLowering = new MiscAssignmentViewModel(Activity.MondayBreakfastDishes, _activeCabins, 1, false);
 
 		}
 
         public override void Resolve()
 		{
-			foreach(var activity in _campfires)
-			{
-				if (activity.IsManagement)
-					scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = -1;
-				else
-				{
-					activity.Assign();
-					scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count;
-				}
-			}
+			//foreach(var activity in _campfires)
+			//{
+			//	if (activity.IsManagement)
+			//		scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = -1;
+			//	else
+			//	{
+			//		activity.Assign();
+			//		scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count;
+			//	}
+			//}
 
-			foreach (var activity in _nightsOff)
-			{
-				activity.Assign();
-			}
+			//foreach (var activity in _nightsOff)
+			//{
+			//	activity.Assign();
+			//}
 
-			foreach (var activity in _quietCabinPatrols)
-			{
-				activity.Assign();
-			}
+			//foreach (var activity in _quietCabinPatrols)
+			//{
+			//	activity.Assign();
+			//}
 		}
 
-
-
-        private ObservableCollection<StaffMember> _activeStaffMembers;
-		public ObservableCollection<StaffMember> ActiveStaffMembers
-        {
-            get => _activeStaffMembers;
-            set
-            {
-                _activeStaffMembers = value;
-                RaisePropertyChanged();
-            }
-        }
+		private List<StaffMember> _activeStaffMembers;
+		private List<Cabin> _activeCabins;
 
 		#region Campfires
 
@@ -85,31 +78,37 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			SundayCampfire = new MiscAssignmentViewModel
 				(
 				Activity.SundayCampfire,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnCampfire[(int)Activity.SundayCampfire.Day],
 				true);
 			MondayCampfire = new MiscAssignmentViewModel
 				(
 				Activity.MondayCampfire,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnCampfire[(int)Activity.MondayCampfire.Day],
 				true);
 			TuesdayCampfire = new MiscAssignmentViewModel
 				(
 				Activity.TuesdayCampfire,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnCampfire[(int)Activity.TuesdayCampfire.Day],
 				true);
 			WednesdayCampfire = new MiscAssignmentViewModel
 				(
 				Activity.WednesdayCampfire,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnCampfire[(int)Activity.WednesdayCampfire.Day],
 				true);
 			ThursdayCampfire = new MiscAssignmentViewModel
 				(
 				Activity.ThursdayCampfire,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnCampfire[(int)Activity.ThursdayCampfire.Day],
 				true);
 			FridayCampfire = new MiscAssignmentViewModel
 				(
 				Activity.FridayCampfire,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnCampfire[(int)Activity.FridayCampfire.Day],
 				true);
 
@@ -202,21 +201,25 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			MondayNightOff = new MiscAssignmentViewModel
 				(
 				Activity.MondayNightOff,
+				_activeStaffMembers,
 				0,
 				false);
 			TuesdayNightOff = new MiscAssignmentViewModel
 				(
 				Activity.TuesdayNightOff,
+				_activeStaffMembers,
 				0,
 				false);
 			WednesdayNightOff = new MiscAssignmentViewModel
 				(
 				Activity.WednesdayNightOff,
+				_activeStaffMembers,
 				0,
 				false);
 			ThursdayNightOff = new MiscAssignmentViewModel
 				(
 				Activity.ThursdayNightOff,
+				_activeStaffMembers,
 				0,
 				false);
 
@@ -285,36 +288,42 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			SundayQuietCabin = new MiscAssignmentViewModel
 				(
 				Activity.SundayQuietCabin,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.SundayQuietCabin.Day],
 				false
 				);
 			MondayQuietCabin = new MiscAssignmentViewModel
 				(
 				Activity.MondayQuietCabin,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.MondayQuietCabin.Day],
 				false
 				);
 			TuesdayQuietCabin = new MiscAssignmentViewModel
 				(
 				Activity.TuesdayQuietCabin,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.TuesdayQuietCabin.Day],
 				false
 				);
 			WednesdayQuietCabin = new MiscAssignmentViewModel
 				(
 				Activity.WednesdayQuietCabin,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.WednesdayQuietCabin.Day],
 				false
 				);
 			ThursdayQuietCabin = new MiscAssignmentViewModel
 				(
 				Activity.ThursdayQuietCabin,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.ThursdayQuietCabin.Day],
 				false
 				);
 			FridayQuietCabin = new MiscAssignmentViewModel
 				(
 				Activity.FridayQuietCabin,
+				_activeStaffMembers,
 				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.FridayQuietCabin.Day],
 				false
 				);
@@ -399,7 +408,36 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#endregion Quiet Cabin Patrols 
 
+		#region Powerup Assistants
 
+		#endregion Powerup Assistants 
+
+		#region Trading Post Assistants
+
+		#endregion Trading Post Assistants 
+
+		#region Flag Lowering 
+
+		private MiscAssignmentViewModel _sundayFlagLowering;
+		public MiscAssignmentViewModel SundayFlagLowering
+		{
+			get => _sundayFlagLowering;
+			set
+			{
+				_sundayFlagLowering = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		#endregion Flag Lowering 
+
+		#region Flag Raising 
+
+		#endregion Flag Raising 
+
+		#region Lunch Grace 
+
+		#endregion LunchGrace 
 
 
 

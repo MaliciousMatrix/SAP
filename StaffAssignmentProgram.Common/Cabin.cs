@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace SAP.Common
 {
-	public class Cabin
+	public class Cabin : IMember
 	{
 		public Cabin(int idNumber, string name, string loop, int cabinScheduleId, bool defaultSelected)
 		{
-			Id = idNumber;
+			IdNumber = idNumber;
 			Name = name;
 			CabinScheduleId = cabinScheduleId;
 			Loop = loop;
 			DefaultSelected = defaultSelected;
 		}
 
+		private Cabin(string name, int id)
+		{
+			IdNumber = id;
+			Name = name;
+		}
+
 		public string Name { get; set; }
 		public string Loop { get; set; }
-		public int Id { get; private set; }
+		public int IdNumber { get; private set; }
 		public int CabinScheduleId { get; set; }
 		public bool DefaultSelected { get; set; }
 
@@ -37,10 +43,16 @@ namespace SAP.Common
 
 		public bool Equals(Cabin c)
 		{
-			return c.Name == this.Name && c.Loop == this.Loop && c.Id == this.Id && c.CabinScheduleId == this.CabinScheduleId;
+			return c.Name == this.Name && c.Loop == this.Loop && c.IdNumber == this.IdNumber && c.CabinScheduleId == this.CabinScheduleId;
+		}
+
+		public bool IsRealMember()
+		{
+			return this.IdNumber >= 0;
 		}
 
 
-		public static Cabin NoCabin = new Cabin(-1, "None", "", -1, false);
+		public static Cabin None = new Cabin("None", -1);
+		public static Cabin Random = new Cabin("Random", -2);
 	}
 }

@@ -28,9 +28,10 @@
 						<GridViewColumn.CellTemplate>
 							<DataTemplate>
 								<ComboBox 
-									ItemsSource="{Binding DataContext.ActiveStaffMembers, 
-									RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}, AncestorLevel=2}}"
-									DisplayMemberPath="Name" SelectedItem="{Binding StaffMember, Mode=TwoWay}">
+									ItemsSource="{Binding DataContext.ActiveMembers, 
+									RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}, 
+									AncestorLevel=1}}"
+									DisplayMemberPath="Name" SelectedItem="{Binding Member, Mode=TwoWay}">
 
 									<!--<i:Interaction.Triggers>
 										<i:EventTrigger EventName="SelectionChanged">

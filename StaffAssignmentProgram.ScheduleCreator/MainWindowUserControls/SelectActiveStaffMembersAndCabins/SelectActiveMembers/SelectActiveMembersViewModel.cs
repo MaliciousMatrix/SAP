@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAndCabins.SelectActiveMembers
 {
-	public class SelectActiveMembersViewModel<T> : ViewModelBase where T : ISelectable
+	public class SelectActiveMembersViewModel<T> : ViewModelBase where T : ISelectableViewModel
 	{
 		public SelectActiveMembersViewModel(string listName, ObservableCollection<T> members, Action<T> deleteMemberFunction, Func<T> createNewMemberFunction, Func<T, T> editMemberFunction)
 		{

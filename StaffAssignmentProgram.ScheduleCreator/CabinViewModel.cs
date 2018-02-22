@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SAP.ScheduleCreator
 {
-	public class CabinViewModel : ViewModelBase, ISelectable
+	public class CabinViewModel : ViewModelBase, ISelectableViewModel
 	{
 		public CabinViewModel(Cabin cabin)
 		{
@@ -48,7 +48,7 @@ namespace SAP.ScheduleCreator
 		{
 			get
 			{
-				return WrappedCabin.Id;
+				return WrappedCabin.IdNumber;
 			}
 		}
 

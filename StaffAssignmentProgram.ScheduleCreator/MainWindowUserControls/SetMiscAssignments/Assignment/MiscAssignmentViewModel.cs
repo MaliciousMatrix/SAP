@@ -11,20 +11,33 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
 {
     public class MiscAssignmentViewModel : ViewModelBase
     {
-        public MiscAssignmentViewModel(Activity activity, int size, bool hasManagementSelection)
+        public MiscAssignmentViewModel(Activity activity, IEnumerable<IMember> activeMembers, int size, bool hasManagementSelection)
         {
             AddMember = new DelegateCommand(ExecuteAddMember);
             DeleteMember = new DelegateCommand(ExecuteDeleteMember);
+			ActiveMembers = new ObservableCollection<IMember>(activeMembers);
             _activity = activity;
             _size = size;
-            ComboBoxValues = new ObservableCollection<StaffWrapper>();
+            ComboBoxValues = new ObservableCollection<MemberWrapper>();
             for(int i = 0; i < size; i++)
             {
                 ExecuteAddMember(null);
             }
+			RaisePropertyChanged(nameof(Day));
         }
 
-        private Activity _activity;
+		private ObservableCollection<IMember> _activeMembers;
+		public ObservableCollection<IMember> ActiveMembers
+		{
+			get => _activeMembers;
+			set
+			{
+				_activeMembers = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		private Activity _activity;
 		public Activity AssignedActivity
 		{
 			get => _activity;
@@ -32,8 +45,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
 
         private int _size;
 
-        private ObservableCollection<StaffWrapper> _comboBoxValues;
-        public ObservableCollection<StaffWrapper> ComboBoxValues
+        private ObservableCollection<MemberWrapper> _comboBoxValues;
+        public ObservableCollection<MemberWrapper> ComboBoxValues
         {
             get => _comboBoxValues;
             set
@@ -95,9 +108,9 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
         }
         private void ExecuteAddMember(object obj)
         {
-			StaffWrapper wrapper = new StaffWrapper()
+			MemberWrapper wrapper = new MemberWrapper()
 			{
-				StaffMember = StaffMember.Random
+				Member = ActiveMembers.First()
 			};
 
 			ComboBoxValues.Add(wrapper);
@@ -126,29 +139,35 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
             return false;
         }
 
-		public void Assign()
+		//public void Assign()
+		//{
+		//	foreach(var item in ComboBoxValues)
+		//	{
+		//		if (item.Member.IsRealMember())
+		//		{
+		//			item.Member.Activities.Add(_activity);
+		//		}
+		//	}
+		//}
+
+		public string Day
 		{
-			foreach(var item in ComboBoxValues)
-			{
-				if (item.StaffMember.IsRealStaffMember())
-				{
-					item.StaffMember.Activities.Add(_activity);
-				}
-			}
+			get => _activity.Day.ToString();
 		}
 
-		public class StaffWrapper : ViewModelBase
+		public class MemberWrapper : ViewModelBase
 		{
-			private StaffMember _staffMember; 
-			public StaffMember StaffMember
+			private IMember _member; 
+			public IMember Member
 			{
-				get => _staffMember;
+				get => _member;
 				set
 				{
-					_staffMember = value;
+					_member = value;
 					RaisePropertyChanged();
 				}
 			}
 		}
+
     }
 }
