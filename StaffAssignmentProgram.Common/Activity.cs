@@ -8,12 +8,13 @@ namespace SAP.Common
 {
 	public class Activity
 	{
-		public Activity(DayOfWeek day, TimeOfDay time, ActivityType type)
+		protected Activity(DayOfWeek day, TimeOfDay time, ActivityType type)
 		{
 			Day = day;
 			Time = time;
 			Type = type;
 		}
+
 		public DayOfWeek Day { get; set; }
 		public TimeOfDay Time { get; set; }
 		public ActivityType Type { get; set; }
@@ -295,10 +296,10 @@ namespace SAP.Common
 
     public class CabinCoverageActivity : Activity
     {
-        public CabinCoverageActivity(DayOfWeek day, TimeOfDay time, ActivityType type) : base(day, time, type)
+        public CabinCoverageActivity(DayOfWeek day, TimeOfDay time, Cabin coverdCabin) : base(day, time, ActivityType.CabinCoverage)
         {
-
-        }
+			CoveredCabin = coverdCabin;
+		}
 
         public Cabin CoveredCabin { get; set; }
 
@@ -306,28 +307,5 @@ namespace SAP.Common
         {
             return base.ToString() + " for " + CoveredCabin.Name;
         }
-
-        #region Cabin Coverage
-
-        public static CabinCoverageActivity MondayCabinCoverage = new CabinCoverageActivity(DayOfWeek.Monday, TimeOfDay.Evening, ActivityType.CabinCoverage);
-        public static CabinCoverageActivity TuesdayCabinCoverage = new CabinCoverageActivity(DayOfWeek.Tuesday, TimeOfDay.Evening, ActivityType.CabinCoverage);
-        public static CabinCoverageActivity WednesdayCabinCoverage = new CabinCoverageActivity(DayOfWeek.Wednesday, TimeOfDay.Evening, ActivityType.CabinCoverage);
-        public static CabinCoverageActivity ThursdayCabinCoverage = new CabinCoverageActivity(DayOfWeek.Thursday, TimeOfDay.Evening, ActivityType.CabinCoverage);
-
-        public static CabinCoverageActivity[] CabinCoverages
-        {
-            get => new CabinCoverageActivity[7]
-            {
-                null,
-                MondayCabinCoverage,
-                TuesdayCabinCoverage,
-                WednesdayCabinCoverage,
-                ThursdayCabinCoverage,
-                null,
-                null
-            };
-        }
-
-        #endregion Cabin Coverage
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ScheduleGenerationEngine")]
+[assembly: AssemblyTitle("SAP.ScheduleGenerationEngine")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ScheduleGenerationEngine")]
+[assembly: AssemblyProduct("SAP.ScheduleGenerationEngine")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3ee0f6c0-82b9-4b39-ad3c-a865966666ff")]
+[assembly: Guid("fae75aa2-3ee5-48fc-8a69-051ea986038e")]
 
 // Version information for an assembly consists of the following four values:
 //
