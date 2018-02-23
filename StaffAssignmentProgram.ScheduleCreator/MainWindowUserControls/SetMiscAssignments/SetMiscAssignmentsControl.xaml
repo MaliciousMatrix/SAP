@@ -36,15 +36,13 @@
 						<ColumnDefinition Width="*"/>
 						<ColumnDefinition Width="*"/>
 						<ColumnDefinition Width="*"/>
-						<ColumnDefinition Width="*"/>
-						<ColumnDefinition Width="*"/>
 					</Grid.ColumnDefinitions>
-					<EveningAssignment:EveningAssignmentControl DataContext="{Binding SundayCampfire}" Grid.Column="0"/>
-					<EveningAssignment:EveningAssignmentControl DataContext="{Binding MondayCampfire}" Grid.Column="1"/>
-					<EveningAssignment:EveningAssignmentControl DataContext="{Binding TuesdayCampfire}" Grid.Column="2"/>
-					<EveningAssignment:EveningAssignmentControl DataContext="{Binding WednesdayCampfire}" Grid.Column="3"/>
-					<EveningAssignment:EveningAssignmentControl DataContext="{Binding ThursdayCampfire}" Grid.Column="4"/>
-					<EveningAssignment:EveningAssignmentControl DataContext="{Binding FridayCampfire}" Grid.Column="5"/>
+					<!--<EveningAssignment:EveningAssignmentControl DataContext="{Binding SundayCampfire}" Grid.Column="0"/>-->
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding MondayCampfire}" Grid.Column="0"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding TuesdayCampfire}" Grid.Column="1"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding WednesdayCampfire}" Grid.Column="2"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding ThursdayCampfire}" Grid.Column="3"/>
+					<!--<EveningAssignment:EveningAssignmentControl DataContext="{Binding FridayCampfire}" Grid.Column="5"/>-->
 				</Grid>
 			</TabItem>
 			

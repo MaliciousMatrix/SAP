@@ -11,7 +11,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
 {
     public class MiscAssignmentViewModel : ViewModelBase
     {
-        public MiscAssignmentViewModel(Activity activity, IEnumerable<IMember> activeMembers, int size, bool hasManagementSelection)
+        public MiscAssignmentViewModel(Activity activity, IEnumerable<IMember> activeMembers, int size)
         {
             AddMember = new DelegateCommand(ExecuteAddMember);
             DeleteMember = new DelegateCommand(ExecuteDeleteMember);
@@ -79,6 +79,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
             }
         }
 
+		// TODO: determine if this is necessary or if we should just remove this checkbox all together. 
         private Visibility managementCheckBoxVisibility = Visibility.Collapsed;
         public Visibility ManagementCheckBoxVisibility
         {

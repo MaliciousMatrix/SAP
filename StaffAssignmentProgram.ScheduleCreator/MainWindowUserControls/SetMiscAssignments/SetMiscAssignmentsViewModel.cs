@@ -35,35 +35,68 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			_activeCabins = new List<Cabin>() { Cabin.Random }.Concat(scheduleCreationInfo.ActiveCabins).ToList();
 
 			InitializeMiscAssignmentViewModels();
-
 		}
 
         public override void Resolve()
 		{
-			//foreach(var activity in _campfires)
+			// TODO: This is the ideal way to take care of this and should eventually be implemented. 
+			// Activities should be responisible for all of their own number management in scheduleCreationInfo. 
+			//foreach (var activity in _allMiscAssignments)
 			//{
-			//	if (activity.IsManagement)
-			//		scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = -1;
-			//	else
-			//	{
+			//	if (!activity.IsManagement)
 			//		activity.Assign();
-			//		scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count;
-			//	}
 			//}
 
-			//foreach (var activity in _nightsOff)
-			//{
-			//	activity.Assign();
-			//}
+			foreach(var activity in _campfires)
+			{
+				scheduleCreationInfo.NumberOnCampfire[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count();
+				activity.Assign();
+			}
 
-			//foreach (var activity in _quietCabinPatrols)
-			//{
-			//	activity.Assign();
-			//}
+			foreach (var activity in _nightsOff)
+			{
+				activity.Assign();
+			}
+
+			foreach (var activity in _quietCabinPatrols)
+			{
+				scheduleCreationInfo.NumberOnQuiteCabin[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count();
+				activity.Assign();
+			}
+
+			foreach(var activity in _powerUps)
+			{
+				scheduleCreationInfo.NumberOnPowerUp[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count();
+				activity.Assign();
+			}
+
+			foreach(var activity in _tradingPosts)
+			{
+				scheduleCreationInfo.NumberOnTradingPost[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count();
+				activity.Assign();
+			}
+
+			foreach(var activity in _flagLowerings)
+			{
+				scheduleCreationInfo.NumberOnFlagLowering[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count();
+				activity.Assign();
+			}
+
+			foreach(var activity in _flagRaisings)
+			{
+				scheduleCreationInfo.NumberOnFlagRaising[(int)activity.AssignedActivity.Day] = activity.ComboBoxValues.Count();
+				activity.Assign();
+			}
+
+			foreach(var activity in _lunchGraces)
+			{
+				activity.Assign();
+			}
 		}
 
 		private void InitializeMiscAssignmentViewModels()
 		{
+			_allMiscAssignments = new List<MiscAssignmentViewModel>();
 			InitCampfires();
 			InitNightsOff();
 			InitQueitCabinPatrols();
@@ -76,6 +109,12 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		private List<StaffMember> _activeStaffMembers;
 		private List<Cabin> _activeCabins;
+		private IEnumerable<MiscAssignmentViewModel> _allMiscAssignments;
+
+		private void ConcatToAllMiscAssignments(IEnumerable<MiscAssignmentViewModel> assignmentList)
+		{
+			_allMiscAssignments = _allMiscAssignments.Concat(assignmentList);
+		}
 
 		#region Campfires
 
@@ -83,70 +122,28 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		private void InitCampfires()
 		{
-			SundayCampfire = new MiscAssignmentViewModel
-				(
-				Activity.SundayCampfire,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnCampfire[(int)Activity.SundayCampfire.Day],
-				true);
-			MondayCampfire = new MiscAssignmentViewModel
-				(
-				Activity.MondayCampfire,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnCampfire[(int)Activity.MondayCampfire.Day],
-				true);
-			TuesdayCampfire = new MiscAssignmentViewModel
-				(
-				Activity.TuesdayCampfire,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnCampfire[(int)Activity.TuesdayCampfire.Day],
-				true);
-			WednesdayCampfire = new MiscAssignmentViewModel
-				(
-				Activity.WednesdayCampfire,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnCampfire[(int)Activity.WednesdayCampfire.Day],
-				true);
-			ThursdayCampfire = new MiscAssignmentViewModel
-				(
-				Activity.ThursdayCampfire,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnCampfire[(int)Activity.ThursdayCampfire.Day],
-				true);
-			FridayCampfire = new MiscAssignmentViewModel
-				(
-				Activity.FridayCampfire,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnCampfire[(int)Activity.FridayCampfire.Day],
-				true);
+			// should have the same values due to it being initialized that way. 
+			int defaultNumberOnCampfire = scheduleCreationInfo.NumberOnCampfire[0];
+			MondayCampfire = new MiscAssignmentViewModel(Activity.MondayCampfire, _activeStaffMembers, defaultNumberOnCampfire);
+			TuesdayCampfire = new MiscAssignmentViewModel(Activity.TuesdayCampfire, _activeStaffMembers, defaultNumberOnCampfire);
+			WednesdayCampfire = new MiscAssignmentViewModel(Activity.WednesdayCampfire, _activeStaffMembers, defaultNumberOnCampfire);
+			ThursdayCampfire = new MiscAssignmentViewModel(Activity.ThursdayCampfire, _activeStaffMembers, defaultNumberOnCampfire);
 
-			_campfires = new MiscAssignmentViewModel[6]
+			_campfires = new MiscAssignmentViewModel[4]
 			{
-				SundayCampfire,
 				MondayCampfire,
 				TuesdayCampfire,
 				WednesdayCampfire,
 				ThursdayCampfire,
-				FridayCampfire,
 			};
+
+			ConcatToAllMiscAssignments(_campfires);
 		}
 
-		private MiscAssignmentViewModel _sundayCampfire;
         private MiscAssignmentViewModel _mondayCampfire;
         private MiscAssignmentViewModel _tuesdayCampfire;
         private MiscAssignmentViewModel _wednesdayCampfire;
         private MiscAssignmentViewModel _thursdayCampfire;
-        private MiscAssignmentViewModel _fridayCampfire;
-
-        public MiscAssignmentViewModel SundayCampfire
-        {
-            get => _sundayCampfire;
-            set
-            {
-                _sundayCampfire = value;
-                RaisePropertyChanged();
-            }
-        }
 
         public MiscAssignmentViewModel MondayCampfire
         {
@@ -188,16 +185,6 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			}
 		}
 
-		public MiscAssignmentViewModel FridayCampfire
-		{
-			get => _fridayCampfire;
-			set
-			{
-				_fridayCampfire = value;
-				RaisePropertyChanged();
-			}
-		}
-
 		#endregion Campfires
 
 		#region Nights Off 
@@ -206,30 +193,12 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		private void InitNightsOff()
 		{
-			MondayNightOff = new MiscAssignmentViewModel
-				(
-				Activity.MondayNightOff,
-				_activeStaffMembers,
-				0,
-				false);
-			TuesdayNightOff = new MiscAssignmentViewModel
-				(
-				Activity.TuesdayNightOff,
-				_activeStaffMembers,
-				0,
-				false);
-			WednesdayNightOff = new MiscAssignmentViewModel
-				(
-				Activity.WednesdayNightOff,
-				_activeStaffMembers,
-				0,
-				false);
-			ThursdayNightOff = new MiscAssignmentViewModel
-				(
-				Activity.ThursdayNightOff,
-				_activeStaffMembers,
-				0,
-				false);
+			// Night off count is determined later. By default we shouldn't have any inputs. 
+			int defaultNightOffCount = 0;
+			MondayNightOff = new MiscAssignmentViewModel(Activity.MondayNightOff, _activeStaffMembers, defaultNightOffCount);
+			TuesdayNightOff = new MiscAssignmentViewModel(Activity.TuesdayNightOff, _activeStaffMembers, defaultNightOffCount);
+			WednesdayNightOff = new MiscAssignmentViewModel(Activity.WednesdayNightOff, _activeStaffMembers, defaultNightOffCount);
+			ThursdayNightOff = new MiscAssignmentViewModel(Activity.ThursdayNightOff, _activeStaffMembers, defaultNightOffCount);
 
 			_nightsOff = new MiscAssignmentViewModel[4]
 			{
@@ -238,6 +207,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 				WednesdayNightOff,
 				ThursdayNightOff
 			};
+
+			ConcatToAllMiscAssignments(_nightsOff);
 		}
 
 		private MiscAssignmentViewModel _mondayNightOff;
@@ -293,48 +264,13 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		private void InitQueitCabinPatrols()
 		{
-			SundayQuietCabin = new MiscAssignmentViewModel
-				(
-				Activity.SundayQuietCabin,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.SundayQuietCabin.Day],
-				false
-				);
-			MondayQuietCabin = new MiscAssignmentViewModel
-				(
-				Activity.MondayQuietCabin,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.MondayQuietCabin.Day],
-				false
-				);
-			TuesdayQuietCabin = new MiscAssignmentViewModel
-				(
-				Activity.TuesdayQuietCabin,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.TuesdayQuietCabin.Day],
-				false
-				);
-			WednesdayQuietCabin = new MiscAssignmentViewModel
-				(
-				Activity.WednesdayQuietCabin,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.WednesdayQuietCabin.Day],
-				false
-				);
-			ThursdayQuietCabin = new MiscAssignmentViewModel
-				(
-				Activity.ThursdayQuietCabin,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.ThursdayQuietCabin.Day],
-				false
-				);
-			FridayQuietCabin = new MiscAssignmentViewModel
-				(
-				Activity.FridayQuietCabin,
-				_activeStaffMembers,
-				scheduleCreationInfo.NumberOnQuiteCabin[(int)Activity.FridayQuietCabin.Day],
-				false
-				);
+			int defaultNumberOnQC = scheduleCreationInfo.NumberOnQuiteCabin[0];
+			SundayQuietCabin = new MiscAssignmentViewModel(Activity.SundayQuietCabin, _activeStaffMembers, defaultNumberOnQC);
+			MondayQuietCabin = new MiscAssignmentViewModel(Activity.MondayQuietCabin, _activeStaffMembers, defaultNumberOnQC);
+			TuesdayQuietCabin = new MiscAssignmentViewModel(Activity.TuesdayQuietCabin, _activeStaffMembers, defaultNumberOnQC);
+			WednesdayQuietCabin = new MiscAssignmentViewModel(Activity.WednesdayQuietCabin, _activeStaffMembers, defaultNumberOnQC);
+			ThursdayQuietCabin = new MiscAssignmentViewModel(Activity.ThursdayQuietCabin, _activeStaffMembers, defaultNumberOnQC);
+			FridayQuietCabin = new MiscAssignmentViewModel(Activity.FridayQuietCabin, _activeStaffMembers, defaultNumberOnQC);
 
 			_quietCabinPatrols = new MiscAssignmentViewModel[6]
 			{
@@ -345,6 +281,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 				ThursdayQuietCabin,
 				FridayQuietCabin
 			};
+
+			ConcatToAllMiscAssignments(_quietCabinPatrols);
 		}
 
 		private MiscAssignmentViewModel _sundayQuietCabin;
@@ -418,14 +356,27 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#region Powerup Assistants
 
+		private MiscAssignmentViewModel[] _powerUps;
+
 		private void InitPowerUps()
 		{
 			int numOnPowerup = scheduleCreationInfo.NumberOnPowerUp;
-			MondayPowerUp = new MiscAssignmentViewModel(Activity.MondayPowerUp, _activeStaffMembers, numOnPowerup, false);
-			TuesdayPowerUp = new MiscAssignmentViewModel(Activity.TuesdayPowerUp, _activeStaffMembers, numOnPowerup, false);
-			WednesdayPowerUp = new MiscAssignmentViewModel(Activity.WednesdayPowerUp, _activeStaffMembers, numOnPowerup, false);
-			ThursdayPowerUp = new MiscAssignmentViewModel(Activity.ThursdayPowerUp, _activeStaffMembers, numOnPowerup, false);
-			FridayPowerUp = new MiscAssignmentViewModel(Activity.FridayPowerUp, _activeStaffMembers, numOnPowerup, false);
+			MondayPowerUp = new MiscAssignmentViewModel(Activity.MondayPowerUp, _activeStaffMembers, numOnPowerup);
+			TuesdayPowerUp = new MiscAssignmentViewModel(Activity.TuesdayPowerUp, _activeStaffMembers, numOnPowerup);
+			WednesdayPowerUp = new MiscAssignmentViewModel(Activity.WednesdayPowerUp, _activeStaffMembers, numOnPowerup);
+			ThursdayPowerUp = new MiscAssignmentViewModel(Activity.ThursdayPowerUp, _activeStaffMembers, numOnPowerup);
+			FridayPowerUp = new MiscAssignmentViewModel(Activity.FridayPowerUp, _activeStaffMembers, numOnPowerup);
+
+			_powerUps = new MiscAssignmentViewModel[5]
+			{
+				MondayPowerUp,
+				TuesdayPowerUp,
+				WednesdayPowerUp,
+				ThursdayPowerUp,
+				FridayPowerUp
+			};
+
+			ConcatToAllMiscAssignments(_powerUps);
 		}
 
 		private MiscAssignmentViewModel _mondayPowerUp;
@@ -488,14 +439,27 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#region Trading Post
 
+		private MiscAssignmentViewModel[] _tradingPosts;
+
 		private void InitTradingPosts()
 		{
 			int numOnTradingPost = scheduleCreationInfo.NumberOnTradingPost;
-			MondayTradingPost = new MiscAssignmentViewModel(Activity.MondayTradingPost, _activeStaffMembers, numOnTradingPost, false);
-			TuesdayTradingPost = new MiscAssignmentViewModel(Activity.TuesdayTradingPost, _activeStaffMembers, numOnTradingPost, false);
-			WednesdayTradingPost = new MiscAssignmentViewModel(Activity.WednesdayTradingPost, _activeStaffMembers, numOnTradingPost, false);
-			ThursdayTradingPost = new MiscAssignmentViewModel(Activity.ThursdayTradingPost, _activeStaffMembers, numOnTradingPost, false);
-			FridayTradingPost = new MiscAssignmentViewModel(Activity.FridayTradingPost, _activeStaffMembers, numOnTradingPost, false);
+			MondayTradingPost = new MiscAssignmentViewModel(Activity.MondayTradingPost, _activeStaffMembers, numOnTradingPost);
+			TuesdayTradingPost = new MiscAssignmentViewModel(Activity.TuesdayTradingPost, _activeStaffMembers, numOnTradingPost);
+			WednesdayTradingPost = new MiscAssignmentViewModel(Activity.WednesdayTradingPost, _activeStaffMembers, numOnTradingPost);
+			ThursdayTradingPost = new MiscAssignmentViewModel(Activity.ThursdayTradingPost, _activeStaffMembers, numOnTradingPost);
+			FridayTradingPost = new MiscAssignmentViewModel(Activity.FridayTradingPost, _activeStaffMembers, numOnTradingPost);
+
+			_tradingPosts = new MiscAssignmentViewModel[5]
+			{
+				MondayTradingPost,
+				TuesdayTradingPost,
+				WednesdayTradingPost,
+				ThursdayTradingPost,
+				FridayTradingPost
+			};
+
+			ConcatToAllMiscAssignments(_tradingPosts);
 		}
 
 		private MiscAssignmentViewModel _mondayTradingPost;
@@ -558,14 +522,28 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#region Flag Lowering 
 
+		private MiscAssignmentViewModel[] _flagLowerings;
+
 		private void InitFlagLowerings()
 		{
-			SundayFlagLowering = new MiscAssignmentViewModel(Activity.SundayFlagLowering, _activeCabins, 1, false);
-			MondayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
-			TuesdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
-			WednesdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
-			ThursdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
-			FridayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
+			SundayFlagLowering = new MiscAssignmentViewModel(Activity.SundayFlagLowering, _activeCabins, 1);
+			MondayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1);
+			TuesdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1);
+			WednesdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1);
+			ThursdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1);
+			FridayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1);
+
+			_flagLowerings = new MiscAssignmentViewModel[6]
+			{
+				SundayFlagLowering,
+				MondayFlagLowering,
+				TuesdayFlagLowering,
+				WednesdayFlagLowering,
+				ThursdayFlagLowering,
+				FridayFlagLowering
+			};
+
+			ConcatToAllMiscAssignments(_flagLowerings);
 		}
 
 		private MiscAssignmentViewModel _sundayFlagLowering;
@@ -639,14 +617,28 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#region Flag Raising 
 
+		private MiscAssignmentViewModel[] _flagRaisings;
+
 		private void InitFlagRaisings()
 		{
-			MondayFlagRaising = new MiscAssignmentViewModel(Activity.MondayFlagRaising, _activeCabins, 1, false);
-			TuesdayFlagRaising = new MiscAssignmentViewModel(Activity.TuesdayFlagRaising, _activeCabins, 1, false);
-			WednesdayFlagRaising = new MiscAssignmentViewModel(Activity.WednesdayFlagRaising, _activeCabins, 1, false);
-			ThursdayFlagRaising = new MiscAssignmentViewModel(Activity.ThursdayFlagRaising, _activeCabins, 1, false);
-			FridayFlagRaising = new MiscAssignmentViewModel(Activity.FridayFlagRaising, _activeCabins, 1, false);
-			SaturdayFlagRaising = new MiscAssignmentViewModel(Activity.SaturdayFlagRaising, _activeCabins, 1, false);
+			MondayFlagRaising = new MiscAssignmentViewModel(Activity.MondayFlagRaising, _activeCabins, 1);
+			TuesdayFlagRaising = new MiscAssignmentViewModel(Activity.TuesdayFlagRaising, _activeCabins, 1);
+			WednesdayFlagRaising = new MiscAssignmentViewModel(Activity.WednesdayFlagRaising, _activeCabins, 1);
+			ThursdayFlagRaising = new MiscAssignmentViewModel(Activity.ThursdayFlagRaising, _activeCabins, 1);
+			FridayFlagRaising = new MiscAssignmentViewModel(Activity.FridayFlagRaising, _activeCabins, 1);
+			SaturdayFlagRaising = new MiscAssignmentViewModel(Activity.SaturdayFlagRaising, _activeCabins, 1);
+
+			_flagRaisings = new MiscAssignmentViewModel[6]
+			{
+				MondayFlagRaising,
+				TuesdayFlagRaising,
+				WednesdayFlagRaising,
+				ThursdayFlagRaising,
+				FridayFlagRaising,
+				SaturdayFlagRaising
+			};
+
+			ConcatToAllMiscAssignments(_flagRaisings);
 		}
 
 		private MiscAssignmentViewModel _mondayFlagRaising;
@@ -720,13 +712,28 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#region Lunch Grace 
 
+		private MiscAssignmentViewModel[] _lunchGraces;
+
 		private void InitLunchGraces()
 		{
-			MondayLunchGrace = new MiscAssignmentViewModel(Activity.MondayLunchGrace, _activeStaffMembers, 1, false);
-			TuesdayLunchGrace = new MiscAssignmentViewModel(Activity.TuesdayLunchGrace, _activeStaffMembers, 1, false);
-			WednesdayLunchGrace = new MiscAssignmentViewModel(Activity.WednesdayLunchGrace, _activeStaffMembers, 1, false);
-			ThursdayLunchGrace = new MiscAssignmentViewModel(Activity.ThursdayLunchGrace, _activeStaffMembers, 1, false);
-			FridayLunchGrace = new MiscAssignmentViewModel(Activity.FridayLunchGrace, _activeStaffMembers, 1, false);
+			// should really always be one. 
+			int numberOnLunchGrace = 1;
+			MondayLunchGrace = new MiscAssignmentViewModel(Activity.MondayLunchGrace, _activeStaffMembers, numberOnLunchGrace);
+			TuesdayLunchGrace = new MiscAssignmentViewModel(Activity.TuesdayLunchGrace, _activeStaffMembers, numberOnLunchGrace);
+			WednesdayLunchGrace = new MiscAssignmentViewModel(Activity.WednesdayLunchGrace, _activeStaffMembers, numberOnLunchGrace);
+			ThursdayLunchGrace = new MiscAssignmentViewModel(Activity.ThursdayLunchGrace, _activeStaffMembers, numberOnLunchGrace);
+			FridayLunchGrace = new MiscAssignmentViewModel(Activity.FridayLunchGrace, _activeStaffMembers, numberOnLunchGrace);
+
+			_lunchGraces = new MiscAssignmentViewModel[5]
+			{
+				MondayLunchGrace,
+				TuesdayLunchGrace,
+				WednesdayLunchGrace,
+				ThursdayLunchGrace,
+				FridayLunchGrace
+			};
+
+			ConcatToAllMiscAssignments(_lunchGraces);
 		}
 
 		private MiscAssignmentViewModel _mondayLunchGrace;
