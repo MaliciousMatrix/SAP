@@ -26,3 +26,17 @@ M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignment
 M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
 M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
 M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe.config
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csprojResolveAssemblyReference.cache
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.g.cs
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\App.g.cs
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.cache
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.lref
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.baml
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.g.resources
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.Properties.Resources.resources
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb

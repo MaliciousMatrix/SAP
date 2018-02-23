@@ -5,3 +5,10 @@ M:\Documents\sap\SAP.ScheduleGenerationEngine\bin\Debug\StaffAssignmentProgram.C
 M:\Documents\sap\SAP.ScheduleGenerationEngine\obj\Debug\SAP.ScheduleGenerationEngine.csprojResolveAssemblyReference.cache
 M:\Documents\sap\SAP.ScheduleGenerationEngine\obj\Debug\SAP.ScheduleGenerationEngine.dll
 M:\Documents\sap\SAP.ScheduleGenerationEngine\obj\Debug\SAP.ScheduleGenerationEngine.pdb
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\bin\Debug\SAP.ScheduleGenerationEngine.dll
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\bin\Debug\SAP.ScheduleGenerationEngine.pdb
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\bin\Debug\StaffAssignmentProgram.Common.dll
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\bin\Debug\StaffAssignmentProgram.Common.pdb
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\obj\Debug\SAP.ScheduleGenerationEngine.csprojResolveAssemblyReference.cache
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\obj\Debug\SAP.ScheduleGenerationEngine.dll
+C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\obj\Debug\SAP.ScheduleGenerationEngine.pdb

@@ -8,7 +8,7 @@ namespace SAP.Common
 {
 	public class Activity
 	{
-		protected Activity(DayOfWeek day, TimeOfDay time, ActivityType type)
+		protected internal Activity(DayOfWeek day, TimeOfDay time, ActivityType type)
 		{
 			Day = day;
 			Time = time;
@@ -291,6 +291,115 @@ namespace SAP.Common
         //}
 
         #endregion Dishes
+
+        #region Flag Raising 
+
+        public static Activity MondayFlagRaising = new Activity(DayOfWeek.Monday, TimeOfDay.Morning, ActivityType.FlagRaising);
+        public static Activity TuesdayFlagRaising = new Activity(DayOfWeek.Tuesday, TimeOfDay.Morning, ActivityType.FlagRaising);
+        public static Activity WednesdayFlagRaising = new Activity(DayOfWeek.Wednesday, TimeOfDay.Morning, ActivityType.FlagRaising);
+        public static Activity ThursdayFlagRaising = new Activity(DayOfWeek.Thursday, TimeOfDay.Morning, ActivityType.FlagRaising);
+        public static Activity FridayFlagRaising = new Activity(DayOfWeek.Friday, TimeOfDay.Morning, ActivityType.FlagRaising);
+        public static Activity SaturdayFlagRasing = new Activity(DayOfWeek.Saturday, TimeOfDay.Morning, ActivityType.FlagRaising);
+
+        #endregion Flag Raising 
+
+        #region Flag Lowering 
+
+        public static Activity SundayFlagLowering = new Activity(DayOfWeek.Sunday, TimeOfDay.Evening, ActivityType.FlagLowering);
+        public static Activity MondayFlagLowering = new Activity(DayOfWeek.Monday, TimeOfDay.Evening, ActivityType.FlagLowering);
+        public static Activity TuesdayFlagLowering = new Activity(DayOfWeek.Tuesday, TimeOfDay.Evening, ActivityType.FlagLowering);
+        public static Activity WednesdayFlagLowering = new Activity(DayOfWeek.Wednesday, TimeOfDay.Evening, ActivityType.FlagLowering);
+        public static Activity ThursdayFlagLowering = new Activity(DayOfWeek.Thursday, TimeOfDay.Evening, ActivityType.FlagLowering);
+        public static Activity FridayFlagLowering = new Activity(DayOfWeek.Friday, TimeOfDay.Evening, ActivityType.FlagLowering);
+
+        public static Activity[] FlagLowerings
+        {
+            get => new Activity[7]
+            {
+                SundayFlagLowering,
+                MondayFlagLowering,
+                TuesdayFlagLowering,
+                WednesdayFlagLowering,
+                ThursdayFlagLowering,
+                FridayFlagLowering,
+                null
+            };
+        }
+
+        #endregion Flag Lowering 
+
+        #region Breakfast Grace 
+
+        public static Activity MondayBreakfastGrace = new Activity(DayOfWeek.Monday, TimeOfDay.Morning, ActivityType.BreakfastGrace);
+        public static Activity TuesdayBreakfastGrace = new Activity(DayOfWeek.Tuesday, TimeOfDay.Morning, ActivityType.BreakfastGrace);
+        public static Activity WednesdayBreakfastGrace = new Activity(DayOfWeek.Wednesday, TimeOfDay.Morning, ActivityType.BreakfastGrace);
+        public static Activity ThursdayBreakfastGrace = new Activity(DayOfWeek.Thursday, TimeOfDay.Morning, ActivityType.BreakfastGrace);
+        public static Activity FridayBreakfastGrace = new Activity(DayOfWeek.Friday, TimeOfDay.Morning, ActivityType.BreakfastGrace);
+        public static Activity SaturdayBreakfastGrace = new Activity(DayOfWeek.Sunday, TimeOfDay.Morning, ActivityType.BreakfastGrace);
+
+        public static Activity[] BreakfastGraces
+        {
+            get => new Activity[7]
+            {
+                null,
+                MondayBreakfastGrace,
+                TuesdayBreakfastGrace,
+                WednesdayBreakfastGrace,
+                ThursdayBreakfastGrace,
+                FridayBreakfastGrace,
+                SaturdayBreakfastGrace
+            };
+        }
+        
+        #endregion Breakfast Grace
+
+        #region Lunch Grace 
+
+        public static Activity MondayLunchGrace = new Activity(DayOfWeek.Monday, TimeOfDay.Noon, ActivityType.LunchGrace);
+        public static Activity TuesdayLunchGrace = new Activity(DayOfWeek.Tuesday, TimeOfDay.Noon, ActivityType.LunchGrace);
+        public static Activity WednesdayLunchGrace = new Activity(DayOfWeek.Wednesday, TimeOfDay.Noon, ActivityType.LunchGrace);
+        public static Activity ThursdayLunchGrace = new Activity(DayOfWeek.Thursday, TimeOfDay.Noon, ActivityType.LunchGrace);
+        public static Activity FridayLunchGrace = new Activity(DayOfWeek.Friday, TimeOfDay.Noon, ActivityType.LunchGrace);
+
+        public static Activity[] LunchGraces
+        {
+            get => new Activity[7]
+            {
+                null,
+                MondayLunchGrace,
+                TuesdayLunchGrace,
+                WednesdayLunchGrace,
+                ThursdayLunchGrace,
+                FridayLunchGrace,
+                null
+            };
+        }
+
+        #endregion Lunch Grace 
+
+        #region Dinner Grace 
+
+        public static Activity SundayDinnerGrace = new Activity(DayOfWeek.Sunday, TimeOfDay.Evening, ActivityType.DinnerGrace);
+        public static Activity MondayDinnerGrace = new Activity(DayOfWeek.Monday, TimeOfDay.Evening, ActivityType.DinnerGrace);
+        public static Activity TuesdayDinnerGrace = new Activity(DayOfWeek.Tuesday, TimeOfDay.Evening, ActivityType.DinnerGrace);
+        public static Activity WednesdayDinnerGrace = new Activity(DayOfWeek.Wednesday, TimeOfDay.Evening, ActivityType.DinnerGrace);
+        public static Activity ThursdayDinnerGrace = new Activity(DayOfWeek.Thursday, TimeOfDay.Evening, ActivityType.DinnerGrace);
+        public static Activity FridayDinnerGrace = new Activity(DayOfWeek.Friday, TimeOfDay.Evening, ActivityType.DinnerGrace);
+
+        public static Activity[] DinnerGraces
+        {
+            get => new Activity[7]
+            {
+                SundayDinnerGrace,
+                MondayDinnerGrace,
+                TuesdayDinnerGrace,
+                WednesdayDinnerGrace,
+                ThursdayDinnerGrace,
+                FridayDinnerGrace,
+                null
+            };
+        }
+        #endregion Dinner Grace 
 
     }
 

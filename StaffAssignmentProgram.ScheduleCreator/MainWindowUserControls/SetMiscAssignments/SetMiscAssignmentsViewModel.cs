@@ -412,13 +412,19 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#endregion Powerup Assistants 
 
-		#region Trading Post Assistants
+		#region Trading Post
 
-		#endregion Trading Post Assistants 
+		#endregion Trading Post
 
 		#region Flag Lowering 
 
 		private MiscAssignmentViewModel _sundayFlagLowering;
+        private MiscAssignmentViewModel _mondayFlagLowering;
+        private MiscAssignmentViewModel _tuesdayFlagLowering;
+        private MiscAssignmentViewModel _wednesdayFlagLowering;
+        private MiscAssignmentViewModel _thursdayFlagLowering;
+        private MiscAssignmentViewModel _fridayFlagLowering;
+
 		public MiscAssignmentViewModel SundayFlagLowering
 		{
 			get => _sundayFlagLowering;
@@ -428,6 +434,46 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 				RaisePropertyChanged();
 			}
 		}
+
+        public MiscAssignmentViewModel MondayFlagLowering
+        {
+            get => _mondayFlagLowering;
+            set
+            {
+                _mondayFlagLowering = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public MiscAssignmentViewModel TuesdayFlagLowering
+        {
+            get => _tuesdayFlagLowering;
+            set
+            {
+                _tuesdayFlagLowering = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public MiscAssignmentViewModel WednesdayFlagLowering
+        {
+            get => _wednesdayFlagLowering;
+            set
+            {
+                _wednesdayFlagLowering = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public MiscAssignmentViewModel ThursdayFlagLowering
+        {
+            get => _thursdayFlagLowering;
+            set
+            {
+                _thursdayFlagLowering = value;
+                RaisePropertyChanged();
+            }
+        }
 
 		#endregion Flag Lowering 
 

@@ -13,3 +13,8 @@ M:\Documents\sap\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.
 M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.csprojResolveAssemblyReference.cache
 M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.dll
 M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.dll
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\bin\Debug\StaffAssignmentProgram.Common.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.csprojResolveAssemblyReference.cache
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.dll
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\obj\Debug\StaffAssignmentProgram.Common.pdb

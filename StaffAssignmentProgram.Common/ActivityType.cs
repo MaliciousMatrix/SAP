@@ -10,15 +10,21 @@ namespace SAP.Common
 	{
 		// Morning 
 		BreakfastDishes,
+        FlagRaising,
+        BreakfastGrace,
 
 		// Noon
 		LunchDishes,
+        LunchGrace,
 
 		// Afternoon
 		PowerUp,
 
 		// Evening 
 		DinnerDishes,
+        FlagLowering,
+        DinnerGrace,
+
 		TradingPost,
 		NightOff, 
 		QuietCabin,
