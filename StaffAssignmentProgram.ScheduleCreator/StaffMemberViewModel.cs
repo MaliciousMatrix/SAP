@@ -87,7 +87,6 @@ namespace SAP.ScheduleCreator
 			{
 				return WrappedStaffMember.IdNumber;
 			}
-			internal set => WrappedStaffMember.IdNumber = value;
 		}
 		public string Email
 		{

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SAP.Common
 {
-	public class StaffMember : IMember
+	public class StaffMember : Member
 	{
 		public StaffMember(string fullName, int idNumber, DateTime birthday, string phoneNumber, string email, List<Preference> preferences, string nickName = null)
 		{
@@ -18,7 +18,6 @@ namespace SAP.Common
 			Email = email;
 			InitAfternoonAssignment();
 			Preferences = preferences;
-			Activities = new List<Activity>();
 		}
 
         private StaffMember(string name, int id)
@@ -28,15 +27,23 @@ namespace SAP.Common
 			IdNumber = id;
         }
 
-		public string Name
+		// Strive to remove this. 
+		public bool SetIdNumber(int number)
+		{
+			if (IdNumber >= 0)
+				return false;
+
+			IdNumber = number;
+			return true;
+		}
+
+		public override string Name
 		{
 			get
 			{
 				return String.IsNullOrWhiteSpace(NickName) ? FullName : NickName;
 			}
 		}
-
-		public int IdNumber { get; set; }
 
 		public string FullName { get; set; }
 		public string NickName { get; set; }
@@ -48,7 +55,6 @@ namespace SAP.Common
 		public Cabin AssignedCabin { get; set; } = Cabin.None;
 		public Location PStaffAssignment { get; set; } = Location.None;
 		public List<Preference> Preferences { get; set; }
-		public List<Activity> Activities { get; set; }
 
 		public bool IsEighteen
 		{
@@ -90,13 +96,8 @@ namespace SAP.Common
 		{
 			return AssignedCabin != null && !AssignedCabin.Equals(Cabin.None);
 		}
-
-		public bool IsRealMember()
-		{
-			return IdNumber >= 0;
-		}
         
-        public static StaffMember None = new StaffMember("None", -1);
-        public static StaffMember Random = new StaffMember("Random", -2);
+        public static  StaffMember None { get; } = new StaffMember("None", noneMemberId);
+        public static  StaffMember Random { get; } = new StaffMember("Random", randomMemberId);
 	}
 }

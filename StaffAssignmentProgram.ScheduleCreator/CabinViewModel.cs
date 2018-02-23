@@ -39,7 +39,7 @@ namespace SAP.ScheduleCreator
 			}
 			set
 			{
-				WrappedCabin.Name = value;
+				WrappedCabin.SetName(value);
 				RaisePropertyChanged();
 			}
 		}

@@ -33,12 +33,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			base.Initialize(scheduleCreationInfo);
 			_activeStaffMembers = new List<StaffMember>() { StaffMember.Random }.Concat(scheduleCreationInfo.ActiveStaffMembers).ToList();
 			_activeCabins = new List<Cabin>() { Cabin.Random }.Concat(scheduleCreationInfo.ActiveCabins).ToList();
-				
-            InitCampfires();
-			InitQueitCabinPatrols();
-			InitNightsOff();
 
-			SundayFlagLowering = new MiscAssignmentViewModel(Activity.MondayBreakfastDishes, _activeCabins, 1, false);
+			InitializeMiscAssignmentViewModels();
 
 		}
 
@@ -64,6 +60,18 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 			//{
 			//	activity.Assign();
 			//}
+		}
+
+		private void InitializeMiscAssignmentViewModels()
+		{
+			InitCampfires();
+			InitNightsOff();
+			InitQueitCabinPatrols();
+			InitPowerUps();
+			InitTradingPosts();
+			InitFlagLowerings();
+			InitFlagRaisings();
+			InitLunchGraces();
 		}
 
 		private List<StaffMember> _activeStaffMembers;
@@ -410,13 +418,155 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		#region Powerup Assistants
 
+		private void InitPowerUps()
+		{
+			int numOnPowerup = scheduleCreationInfo.NumberOnPowerUp;
+			MondayPowerUp = new MiscAssignmentViewModel(Activity.MondayPowerUp, _activeStaffMembers, numOnPowerup, false);
+			TuesdayPowerUp = new MiscAssignmentViewModel(Activity.TuesdayPowerUp, _activeStaffMembers, numOnPowerup, false);
+			WednesdayPowerUp = new MiscAssignmentViewModel(Activity.WednesdayPowerUp, _activeStaffMembers, numOnPowerup, false);
+			ThursdayPowerUp = new MiscAssignmentViewModel(Activity.ThursdayPowerUp, _activeStaffMembers, numOnPowerup, false);
+			FridayPowerUp = new MiscAssignmentViewModel(Activity.FridayPowerUp, _activeStaffMembers, numOnPowerup, false);
+		}
+
+		private MiscAssignmentViewModel _mondayPowerUp;
+		private MiscAssignmentViewModel _tuesdayPowerUp;
+		private MiscAssignmentViewModel _wednesdayPowerUp;
+		private MiscAssignmentViewModel _thursdayPowerUp;
+		private MiscAssignmentViewModel _fridayPowerUp;
+
+		public MiscAssignmentViewModel MondayPowerUp
+		{
+			get => _mondayPowerUp;
+			set
+			{
+				_mondayPowerUp = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel TuesdayPowerUp
+		{
+			get => _tuesdayPowerUp;
+			set
+			{
+				_tuesdayPowerUp = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel WednesdayPowerUp
+		{
+			get => _wednesdayPowerUp;
+			set
+			{
+				_wednesdayPowerUp = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel ThursdayPowerUp
+		{
+			get => _thursdayPowerUp;
+			set
+			{
+				_thursdayPowerUp = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel FridayPowerUp
+		{
+			get => _fridayPowerUp;
+			set
+			{
+				_fridayPowerUp = value;
+				RaisePropertyChanged();
+			}
+		}
+
 		#endregion Powerup Assistants 
 
 		#region Trading Post
 
+		private void InitTradingPosts()
+		{
+			int numOnTradingPost = scheduleCreationInfo.NumberOnTradingPost;
+			MondayTradingPost = new MiscAssignmentViewModel(Activity.MondayTradingPost, _activeStaffMembers, numOnTradingPost, false);
+			TuesdayTradingPost = new MiscAssignmentViewModel(Activity.TuesdayTradingPost, _activeStaffMembers, numOnTradingPost, false);
+			WednesdayTradingPost = new MiscAssignmentViewModel(Activity.WednesdayTradingPost, _activeStaffMembers, numOnTradingPost, false);
+			ThursdayTradingPost = new MiscAssignmentViewModel(Activity.ThursdayTradingPost, _activeStaffMembers, numOnTradingPost, false);
+			FridayTradingPost = new MiscAssignmentViewModel(Activity.FridayTradingPost, _activeStaffMembers, numOnTradingPost, false);
+		}
+
+		private MiscAssignmentViewModel _mondayTradingPost;
+		private MiscAssignmentViewModel _tuesdayTradingPost;
+		private MiscAssignmentViewModel _wednesdayTradingPost;
+		private MiscAssignmentViewModel _thursdayTradingPost;
+		private MiscAssignmentViewModel _fridayTradingPost;
+
+		public MiscAssignmentViewModel MondayTradingPost
+		{
+			get => _mondayTradingPost;
+			set
+			{
+				_mondayTradingPost = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel TuesdayTradingPost
+		{
+			get => _tuesdayTradingPost;
+			set
+			{
+				_tuesdayTradingPost = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel WednesdayTradingPost
+		{
+			get => _wednesdayTradingPost;
+			set
+			{
+				_wednesdayTradingPost = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel ThursdayTradingPost
+		{
+			get => _thursdayTradingPost;
+			set
+			{
+				_thursdayTradingPost = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel FridayTradingPost
+		{
+			get => _fridayTradingPost;
+			set
+			{
+				_fridayTradingPost = value;
+				RaisePropertyChanged();
+			}
+		}
+
 		#endregion Trading Post
 
 		#region Flag Lowering 
+
+		private void InitFlagLowerings()
+		{
+			SundayFlagLowering = new MiscAssignmentViewModel(Activity.SundayFlagLowering, _activeCabins, 1, false);
+			MondayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
+			TuesdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
+			WednesdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
+			ThursdayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
+			FridayFlagLowering = new MiscAssignmentViewModel(Activity.MondayFlagLowering, _activeCabins, 1, false);
+		}
 
 		private MiscAssignmentViewModel _sundayFlagLowering;
         private MiscAssignmentViewModel _mondayFlagLowering;
@@ -475,376 +625,166 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
             }
         }
 
+		public MiscAssignmentViewModel FridayFlagLowering
+		{
+			get => _fridayFlagLowering;
+			set
+			{
+				_fridayFlagLowering = value;
+				RaisePropertyChanged();
+			}
+		}
+
 		#endregion Flag Lowering 
 
 		#region Flag Raising 
+
+		private void InitFlagRaisings()
+		{
+			MondayFlagRaising = new MiscAssignmentViewModel(Activity.MondayFlagRaising, _activeCabins, 1, false);
+			TuesdayFlagRaising = new MiscAssignmentViewModel(Activity.TuesdayFlagRaising, _activeCabins, 1, false);
+			WednesdayFlagRaising = new MiscAssignmentViewModel(Activity.WednesdayFlagRaising, _activeCabins, 1, false);
+			ThursdayFlagRaising = new MiscAssignmentViewModel(Activity.ThursdayFlagRaising, _activeCabins, 1, false);
+			FridayFlagRaising = new MiscAssignmentViewModel(Activity.FridayFlagRaising, _activeCabins, 1, false);
+			SaturdayFlagRaising = new MiscAssignmentViewModel(Activity.SaturdayFlagRaising, _activeCabins, 1, false);
+		}
+
+		private MiscAssignmentViewModel _mondayFlagRaising;
+		private MiscAssignmentViewModel _tuesdayFlagRaising;
+		private MiscAssignmentViewModel _wednesdayFlagRaising;
+		private MiscAssignmentViewModel _thursdayFlagRaising;
+		private MiscAssignmentViewModel _fridayFlagRaising;
+		private MiscAssignmentViewModel _saturdayFlagRaising;
+
+		public MiscAssignmentViewModel MondayFlagRaising
+		{
+			get => _mondayFlagRaising;
+			set
+			{
+				_mondayFlagRaising = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel TuesdayFlagRaising
+		{
+			get => _tuesdayFlagRaising;
+			set
+			{
+				_tuesdayFlagRaising = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel WednesdayFlagRaising
+		{
+			get => _wednesdayFlagRaising;
+			set
+			{
+				_wednesdayFlagRaising = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel ThursdayFlagRaising
+		{
+			get => _thursdayFlagRaising;
+			set
+			{
+				_thursdayFlagRaising = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel FridayFlagRaising
+		{
+			get => _fridayFlagRaising;
+			set
+			{
+				_fridayFlagRaising = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		public MiscAssignmentViewModel SaturdayFlagRaising
+		{
+			get => _saturdayFlagRaising;
+			set
+			{
+				_saturdayFlagRaising = value;
+				RaisePropertyChanged();
+			}
+		}
 
 		#endregion Flag Raising 
 
 		#region Lunch Grace 
 
-		#endregion LunchGrace 
+		private void InitLunchGraces()
+		{
+			MondayLunchGrace = new MiscAssignmentViewModel(Activity.MondayLunchGrace, _activeStaffMembers, 1, false);
+			TuesdayLunchGrace = new MiscAssignmentViewModel(Activity.TuesdayLunchGrace, _activeStaffMembers, 1, false);
+			WednesdayLunchGrace = new MiscAssignmentViewModel(Activity.WednesdayLunchGrace, _activeStaffMembers, 1, false);
+			ThursdayLunchGrace = new MiscAssignmentViewModel(Activity.ThursdayLunchGrace, _activeStaffMembers, 1, false);
+			FridayLunchGrace = new MiscAssignmentViewModel(Activity.FridayLunchGrace, _activeStaffMembers, 1, false);
+		}
 
+		private MiscAssignmentViewModel _mondayLunchGrace;
+		private MiscAssignmentViewModel _tuesdayLunchGrace;
+		private MiscAssignmentViewModel _wednesdayLunchGrace;
+		private MiscAssignmentViewModel _thursdayLunchGrace;
+		private MiscAssignmentViewModel _fridayLunchGrace;
 
+		public MiscAssignmentViewModel MondayLunchGrace
+		{
+			get => _mondayLunchGrace;
+			set
+			{
+				_mondayLunchGrace = value;
+				RaisePropertyChanged();
+			}
+		}
 
-		//private CampfireViewModel[] _campfires;
-		//private NightOffViewModel[] _nightsOff;
-		//private QuietCabinViewModel[] _quietCabins;
+		public MiscAssignmentViewModel TuesdayLunchGrace
+		{
+			get => _tuesdayLunchGrace;
+			set
+			{
+				_tuesdayLunchGrace = value;
+				RaisePropertyChanged();
+			}
+		}
 
+		public MiscAssignmentViewModel WednesdayLunchGrace
+		{
+			get => _wednesdayLunchGrace;
+			set
+			{
+				_wednesdayLunchGrace = value;
+				RaisePropertyChanged();
+			}
+		}
 
+		public MiscAssignmentViewModel ThursdayLunchGrace
+		{
+			get => _thursdayLunchGrace;
+			set
+			{
+				_thursdayLunchGrace = value;
+				RaisePropertyChanged();
+			}
+		}
 
+		public MiscAssignmentViewModel FridayLunchGrace
+		{
+			get => _fridayLunchGrace;
+			set
+			{
+				_fridayLunchGrace = value;
+				RaisePropertyChanged();
+			}
+		}
 
-		//#region Evening job assignment
-
-		//#region Campfire 
-
-		////private void InitCampfires()
-		////{
-		////	SundayCampfire = new CampfireViewModel(numberOnCampfire, DayOfWeek.Sunday, true);
-		////	MondayCampfire = new CampfireViewModel(numberOnCampfire, DayOfWeek.Monday, false);
-		////	TuesdayCampfire = new CampfireViewModel(numberOnCampfire, DayOfWeek.Tuesday, false);
-		////	WednesdayCampfire = new CampfireViewModel(numberOnCampfire, DayOfWeek.Wednesday, false);
-		////	ThursdayCampfire = new CampfireViewModel(numberOnCampfire, DayOfWeek.Thursday, false);
-		////	FridayCampfire = new CampfireViewModel(numberOnCampfire, DayOfWeek.Friday, true);
-		////}
-
-		////private CampfireViewModel sundayCampfire;
-		////private CampfireViewModel mondayCampfire;
-		////private CampfireViewModel tuesdayCampfire;
-		////private CampfireViewModel wednesdayCampfire;
-		////private CampfireViewModel thursdayCampfire;
-		////private CampfireViewModel fridayCampfire;
-
-		//public CampfireViewModel SundayCampfire
-		//{
-		//	get
-		//	{
-		//		return _campfires[(int)DayOfWeek.Sunday];
-		//	}
-		//	set
-		//	{
-		//		_campfires[(int)DayOfWeek.Sunday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public CampfireViewModel MondayCampfire
-		//{
-		//	get
-		//	{
-		//		return _campfires[(int)DayOfWeek.Monday];
-		//	}
-		//	set
-		//	{
-		//		_campfires[(int)DayOfWeek.Monday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public CampfireViewModel TuesdayCampfire
-		//{
-		//	get
-		//	{
-		//		return _campfires[(int)DayOfWeek.Tuesday];
-		//	}
-		//	set
-		//	{
-		//		_campfires[(int)DayOfWeek.Tuesday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public CampfireViewModel WednesdayCampfire
-		//{
-		//	get
-		//	{
-		//		return _campfires[(int)DayOfWeek.Wednesday];
-		//	}
-		//	set
-		//	{
-		//		_campfires[(int)DayOfWeek.Wednesday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public CampfireViewModel ThursdayCampfire
-		//{
-		//	get
-		//	{
-		//		return _campfires[(int)DayOfWeek.Thursday];
-		//	}
-		//	set
-		//	{
-		//		_campfires[(int)DayOfWeek.Thursday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public CampfireViewModel FridayCampfire
-		//{
-		//	get
-		//	{
-		//		return _campfires[(int)DayOfWeek.Friday];
-		//	}
-		//	set
-		//	{
-		//		_campfires[(int)DayOfWeek.Friday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-
-		//#endregion Campfire
-
-		//#region Nights Off
-
-		////private void InitNightsOff()
-		////{
-		////	MondayNightOff = new NightOffViewModel(DayOfWeek.Monday);
-		////	TuesdayNightOff = new NightOffViewModel(DayOfWeek.Tuesday);
-		////	WednesdayNightOff = new NightOffViewModel(DayOfWeek.Wednesday);
-		////	ThursdayNightOff = new NightOffViewModel(DayOfWeek.Thursday);
-		////}
-
-		////private NightOffViewModel mondayNightOff;
-		////private NightOffViewModel tuesdayNightOff;
-		////private NightOffViewModel wednesdayNightOff;
-		////private NightOffViewModel thursdayNightOff;
-
-		//public NightOffViewModel MondayNightOff
-		//{
-		//	get
-		//	{
-		//		return _nightsOff[(int)DayOfWeek.Monday];
-		//	}
-		//	set
-		//	{
-		//		_nightsOff[(int)DayOfWeek.Monday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public NightOffViewModel TuesdayNightOff
-		//{
-		//	get
-		//	{
-		//		return _nightsOff[(int)DayOfWeek.Tuesday];
-		//	}
-		//	set
-		//	{
-		//		_nightsOff[(int)DayOfWeek.Tuesday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public NightOffViewModel WednesdayNightOff
-		//{
-		//	get
-		//	{
-		//		return _nightsOff[(int)DayOfWeek.Wednesday];
-		//	}
-		//	set
-		//	{
-		//		_nightsOff[(int)DayOfWeek.Wednesday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public NightOffViewModel ThursdayNightOff
-		//{
-		//	get
-		//	{
-		//		return _nightsOff[(int)DayOfWeek.Thursday];
-		//	}
-		//	set
-		//	{
-		//		_nightsOff[(int)DayOfWeek.Thursday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-
-		//#endregion Nights Off
-
-		//#region QuietCabin
-
-		////private void InitQuietCabins()
-		////{
-		////	SundayQuietCabin = new QuietCabinViewModel(numberOnQuietCabin, DayOfWeek.Sunday);
-		////	MondayQuietCabin = new QuietCabinViewModel(numberOnQuietCabin, DayOfWeek.Monday);
-		////	TuesdayQuietCabin = new QuietCabinViewModel(numberOnQuietCabin, DayOfWeek.Tuesday);
-		////	WednesdayQuietCabin = new QuietCabinViewModel(numberOnQuietCabin, DayOfWeek.Wednesday);
-		////	ThursdayQuietCabin = new QuietCabinViewModel(numberOnQuietCabin, DayOfWeek.Thursday);
-		////	FridayQuietCabin = new QuietCabinViewModel(numberOnQuietCabin, DayOfWeek.Friday);
-		////}
-
-		////private QuietCabinViewModel sundayQuietCabin;
-		////private QuietCabinViewModel mondayQuietCabin;
-		////private QuietCabinViewModel tuesdayQuietCabin;
-		////private QuietCabinViewModel wednesdayQuietCabin;
-		////private QuietCabinViewModel thursdayQuietCabin;
-		////private QuietCabinViewModel fridayQuietCabin;
-
-		//public QuietCabinViewModel SundayQuietCabin
-		//{
-		//	get
-		//	{
-		//		return _quietCabins[(int)DayOfWeek.Sunday];
-		//	}
-		//	set
-		//	{
-		//		_quietCabins[(int)DayOfWeek.Sunday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public QuietCabinViewModel MondayQuietCabin
-		//{
-		//	get
-		//	{
-		//		return _quietCabins[(int)DayOfWeek.Monday];
-		//	}
-		//	set
-		//	{
-		//		_quietCabins[(int)DayOfWeek.Monday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public QuietCabinViewModel TuesdayQuietCabin
-		//{
-		//	get
-		//	{
-		//		return _quietCabins[(int)DayOfWeek.Tuesday];
-		//	}
-		//	set
-		//	{
-		//		_quietCabins[(int)DayOfWeek.Tuesday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public QuietCabinViewModel WednesdayQuietCabin
-		//{
-		//	get
-		//	{
-		//		return _quietCabins[(int)DayOfWeek.Wednesday];
-		//	}
-		//	set
-		//	{
-		//		_quietCabins[(int)DayOfWeek.Wednesday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public QuietCabinViewModel ThursdayQuietCabin
-		//{
-		//	get
-		//	{
-		//		return _quietCabins[(int)DayOfWeek.Thursday];
-		//	}
-		//	set
-		//	{
-		//		_quietCabins[(int)DayOfWeek.Thursday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-		//public QuietCabinViewModel FridayQuietCabin
-		//{
-		//	get
-		//	{
-		//		return _quietCabins[(int)DayOfWeek.Friday];
-		//	}
-		//	set
-		//	{
-		//		_quietCabins[(int)DayOfWeek.Friday] = value;
-		//		RaisePropertyChanged();
-		//	}
-		//}
-
-		//#endregion QuietCabin
-
-		//private void ResolveAndSetEveningAssignments()
-		//{
-		//	foreach (var member in ActiveStaffMembers)
-		//	{
-		//		IEnumerable<ActivityViewModel> activities = GetAssignedEveningActivitiesFromStaffMemberId(member.IdNumber);
-
-		//		List<EveningJob>[] activitiesByNight = new List<EveningJob>[]
-		//		{
-		//			new List<EveningJob>(),
-		//			new List<EveningJob>(),
-		//			new List<EveningJob>(),
-		//			new List<EveningJob>(),
-		//			new List<EveningJob>(),
-		//			new List<EveningJob>(),
-		//		};
-
-		//		foreach (var a in activities)
-		//		{
-		//			activitiesByNight[(int)a.Day].Add(a.Assignment);
-		//		}
-
-		//		for (int i = 0; i < member.WrappedStaffMember.EveningActivities.Count(); i++)
-		//		{
-		//			if (member.WrappedStaffMember.EveningActivities[i] != EveningJob.None)
-		//			{
-		//				activitiesByNight[i].Add(member.WrappedStaffMember.EveningActivities[i]);
-		//			}
-		//			// TODO: Change this, this doesn't resolve the conflicts. Just removes them. 
-		//			activitiesByNight[i] = activitiesByNight[i].Distinct().ToList();
-		//		}
-
-		//		bool hasConflicts = false;
-		//		foreach (var activity in activitiesByNight)
-		//		{
-		//			if (activity.Count() > 1)
-		//			{
-		//				hasConflicts = true;
-		//				break;
-		//			}
-		//		}
-		//		ResolveEveningConflicts conflicts = null;
-		//		if (hasConflicts)
-		//		{
-		//			conflicts = new ResolveEveningConflicts(member, activitiesByNight);
-		//			conflicts.ShowDialog();
-		//		}
-
-		//		for (int i = 0; i < 6; i++)
-		//		{
-		//			if (activitiesByNight[i].Count == 1)
-		//			{
-		//				member.WrappedStaffMember.EveningActivities[i] = activitiesByNight[i].First();
-		//			}
-		//		}
-
-		//		if (conflicts != null)
-		//		{
-		//			var assn = conflicts.GetAssignments();
-		//			for (int i = 0; i < 6; i++)
-		//			{
-		//				if (assn[i] != EveningJob.None)
-		//				{
-		//					member.WrappedStaffMember.EveningActivities[i] = assn[i];
-		//				}
-		//			}
-		//		}
-		//	}
-		//}
-
-		//private IEnumerable<ActivityViewModel> GetAssignedEveningActivitiesFromStaffMemberId(int idNumber)
-		//{
-		//	IEnumerable<ActivityViewModel> activities = new List<ActivityViewModel>();
-
-		//	activities = activities.Concat(SundayCampfire.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(MondayCampfire.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(TuesdayCampfire.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(WednesdayCampfire.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(ThursdayCampfire.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(FridayCampfire.GetSelectedComboBoxValues());
-
-		//	activities = activities.Concat(MondayNightOff.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(TuesdayNightOff.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(WednesdayNightOff.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(ThursdayNightOff.GetSelectedComboBoxValues());
-
-		//	activities = activities.Concat(SundayQuietCabin.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(MondayQuietCabin.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(TuesdayQuietCabin.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(WednesdayQuietCabin.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(ThursdayQuietCabin.GetSelectedComboBoxValues());
-		//	activities = activities.Concat(FridayQuietCabin.GetSelectedComboBoxValues());
-
-		//	return activities.Where(x => x.StaffMemberId == idNumber);
-		//}
-
-		//#endregion Evening job assignment
+		#endregion Lunch Grace 
 	}
 }

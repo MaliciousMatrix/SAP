@@ -74,11 +74,13 @@
 						<ColumnDefinition Width="*"/>
 						<ColumnDefinition Width="*"/>
 						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
 					</Grid.ColumnDefinitions>
 					<EveningAssignment:EveningAssignmentControl DataContext="{Binding MondayPowerUp}" Grid.Column="0"/>
 					<EveningAssignment:EveningAssignmentControl DataContext="{Binding TuesdayPowerUp}" Grid.Column="1"/>
 					<EveningAssignment:EveningAssignmentControl DataContext="{Binding WednesdayPowerUp}" Grid.Column="2"/>
 					<EveningAssignment:EveningAssignmentControl DataContext="{Binding ThursdayPowerUp}" Grid.Column="3"/>
+					<EveningAssignment:EveningAssignmentControl DataContext="{Binding FridayPowerUp}" Grid.Column="4"/>
 				</Grid>
 			</TabItem>
 

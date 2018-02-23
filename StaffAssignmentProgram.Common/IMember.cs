@@ -11,5 +11,7 @@ namespace SAP.Common
 		string Name { get; }
 		int IdNumber { get; }
 		bool IsRealMember();
+		IEnumerable<Activity> Activities { get; }
+		bool AssignActivity(Activity activity);
 	}
 }

@@ -15,5 +15,8 @@ namespace SAP.Common
 		public int[] NumberOnCampfire { get; set; }
 		public int[] NumberOnQuiteCabin { get; set; }
 		public int[,] NumberOnDishes { get; set; }
+
+		public int NumberOnTradingPost { get; set; } = 2;
+		public int NumberOnPowerUp { get; set; } = 2;
 	}
 }

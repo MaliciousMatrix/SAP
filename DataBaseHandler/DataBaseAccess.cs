@@ -96,7 +96,7 @@ namespace SAP.DataBaseHandler
 			string getNewId = $"SELECT MAX(id) FROM StaffMembers";
 			var reader = ExecuteQuery(getNewId);
 			// There has to be a better way than doing that...
-			staffMember.IdNumber = Convert.ToInt32(reader.GetValues().GetValues(0).GetValue(0));
+			staffMember.SetIdNumber(Convert.ToInt32(reader.GetValues().GetValues(0).GetValue(0)));
 			reader.Close();
 			Close();
 

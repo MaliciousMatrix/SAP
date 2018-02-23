@@ -139,16 +139,16 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
             return false;
         }
 
-		//public void Assign()
-		//{
-		//	foreach(var item in ComboBoxValues)
-		//	{
-		//		if (item.Member.IsRealMember())
-		//		{
-		//			item.Member.Activities.Add(_activity);
-		//		}
-		//	}
-		//}
+		public void Assign()
+		{
+			foreach (var item in ComboBoxValues)
+			{
+				if (item.Member.IsRealMember())
+				{
+					item.Member.AssignActivity(AssignedActivity);
+				}
+			}
+		}
 
 		public string Day
 		{

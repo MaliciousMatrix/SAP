@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SAP.Common
 {
-	public class Cabin : IMember
+	public class Cabin : Member
 	{
 		public Cabin(int idNumber, string name, string loop, int cabinScheduleId, bool defaultSelected)
 		{
 			IdNumber = idNumber;
-			Name = name;
+			_name = name;
 			CabinScheduleId = cabinScheduleId;
 			Loop = loop;
 			DefaultSelected = defaultSelected;
@@ -20,12 +20,26 @@ namespace SAP.Common
 		private Cabin(string name, int id)
 		{
 			IdNumber = id;
-			Name = name;
+			_name = name;
+			
 		}
 
-		public string Name { get; set; }
+		private string _name;
+		public override string Name
+		{
+			get => _name;
+		}
+
+		public bool SetName(string name)
+		{
+			if (String.IsNullOrWhiteSpace(name))
+				return false;
+
+			_name = name;
+			return true;
+		}
+
 		public string Loop { get; set; }
-		public int IdNumber { get; private set; }
 		public int CabinScheduleId { get; set; }
 		public bool DefaultSelected { get; set; }
 
@@ -46,13 +60,9 @@ namespace SAP.Common
 			return c.Name == this.Name && c.Loop == this.Loop && c.IdNumber == this.IdNumber && c.CabinScheduleId == this.CabinScheduleId;
 		}
 
-		public bool IsRealMember()
-		{
-			return this.IdNumber >= 0;
-		}
+		public static Cabin None = new Cabin("None", noneMemberId);
+		public static Cabin Random = new Cabin("Random", randomMemberId);
 
-
-		public static Cabin None = new Cabin("None", -1);
-		public static Cabin Random = new Cabin("Random", -2);
+		
 	}
 }

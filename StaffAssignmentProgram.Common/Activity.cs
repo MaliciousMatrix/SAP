@@ -163,8 +163,9 @@ namespace SAP.Common
         public static Activity TuesdayPowerUp = new Activity(DayOfWeek.Tuesday, TimeOfDay.Afternoon, ActivityType.PowerUp);
         public static Activity WednesdayPowerUp = new Activity(DayOfWeek.Wednesday, TimeOfDay.Afternoon, ActivityType.PowerUp);
         public static Activity ThursdayPowerUp = new Activity(DayOfWeek.Thursday, TimeOfDay.Afternoon, ActivityType.PowerUp);
+		public static Activity FridayPowerUp = new Activity(DayOfWeek.Friday, TimeOfDay.Afternoon, ActivityType.PowerUp);
 
-        public static Activity[] PowerUps
+		public static Activity[] PowerUps
         {
             get => new Activity[7]
             {
@@ -173,7 +174,7 @@ namespace SAP.Common
                 TuesdayPowerUp,
                 WednesdayPowerUp,
                 ThursdayPowerUp,
-                null,
+                FridayPowerUp,
                 null,
             };
         }
@@ -299,7 +300,7 @@ namespace SAP.Common
         public static Activity WednesdayFlagRaising = new Activity(DayOfWeek.Wednesday, TimeOfDay.Morning, ActivityType.FlagRaising);
         public static Activity ThursdayFlagRaising = new Activity(DayOfWeek.Thursday, TimeOfDay.Morning, ActivityType.FlagRaising);
         public static Activity FridayFlagRaising = new Activity(DayOfWeek.Friday, TimeOfDay.Morning, ActivityType.FlagRaising);
-        public static Activity SaturdayFlagRasing = new Activity(DayOfWeek.Saturday, TimeOfDay.Morning, ActivityType.FlagRaising);
+        public static Activity SaturdayFlagRaising = new Activity(DayOfWeek.Saturday, TimeOfDay.Morning, ActivityType.FlagRaising);
 
         #endregion Flag Raising 
 
