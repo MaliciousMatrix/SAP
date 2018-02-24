@@ -360,7 +360,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		private void InitPowerUps()
 		{
-			int numOnPowerup = scheduleCreationInfo.NumberOnPowerUp;
+			int numOnPowerup = scheduleCreationInfo.NumberOnPowerUp[0];
 			MondayPowerUp = new MiscAssignmentViewModel(Activity.MondayPowerUp, _activeStaffMembers, numOnPowerup);
 			TuesdayPowerUp = new MiscAssignmentViewModel(Activity.TuesdayPowerUp, _activeStaffMembers, numOnPowerup);
 			WednesdayPowerUp = new MiscAssignmentViewModel(Activity.WednesdayPowerUp, _activeStaffMembers, numOnPowerup);
@@ -443,7 +443,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments
 
 		private void InitTradingPosts()
 		{
-			int numOnTradingPost = scheduleCreationInfo.NumberOnTradingPost;
+			int numOnTradingPost = scheduleCreationInfo.NumberOnTradingPost[0];
 			MondayTradingPost = new MiscAssignmentViewModel(Activity.MondayTradingPost, _activeStaffMembers, numOnTradingPost);
 			TuesdayTradingPost = new MiscAssignmentViewModel(Activity.TuesdayTradingPost, _activeStaffMembers, numOnTradingPost);
 			WednesdayTradingPost = new MiscAssignmentViewModel(Activity.WednesdayTradingPost, _activeStaffMembers, numOnTradingPost);
