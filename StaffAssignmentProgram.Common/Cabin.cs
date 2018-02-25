@@ -10,6 +10,12 @@ namespace SAP.Common
 	{
 		public Cabin(int idNumber, string name, string loop, int cabinScheduleId, bool defaultSelected)
 		{
+			if (idNumber < 0)
+				throw new ArgumentOutOfRangeException("idNumber must be an integer greater than zero.");
+
+			if (String.IsNullOrWhiteSpace(name))
+				throw new ArgumentOutOfRangeException("name must have a value other than null or whitespace.");
+
 			IdNumber = idNumber;
 			_name = name;
 			CabinScheduleId = cabinScheduleId;

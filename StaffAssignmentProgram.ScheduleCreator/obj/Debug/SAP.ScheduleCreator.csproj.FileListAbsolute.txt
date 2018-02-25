@@ -8,14 +8,12 @@ M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramewor
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.dll
-M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.EF6.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.Linq.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Windows.Interactivity.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\DataBaseHandler.pdb
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\DataBaseHandler.dll.config
-M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.pdb
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.xml
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.SqlServer.xml
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.pdb
@@ -120,3 +118,5 @@ C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.Sc
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.csproj.GenerateResource.Cache
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.exe
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
+M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.dll
+M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.pdb

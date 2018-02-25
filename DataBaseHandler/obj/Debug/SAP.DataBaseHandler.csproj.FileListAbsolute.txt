@@ -3,11 +3,9 @@ M:\Documents\sap\DataBaseHandler\bin\Debug\DataBaseHandler.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\DataBaseHandler.pdb
 M:\Documents\sap\DataBaseHandler\bin\Debug\EntityFramework.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\EntityFramework.SqlServer.dll
-M:\Documents\sap\DataBaseHandler\bin\Debug\StaffAssignmentProgram.Common.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\System.Data.SQLite.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\System.Data.SQLite.EF6.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\System.Data.SQLite.Linq.dll
-M:\Documents\sap\DataBaseHandler\bin\Debug\StaffAssignmentProgram.Common.pdb
 M:\Documents\sap\DataBaseHandler\bin\Debug\EntityFramework.xml
 M:\Documents\sap\DataBaseHandler\bin\Debug\EntityFramework.SqlServer.xml
 M:\Documents\sap\DataBaseHandler\bin\Debug\System.Data.SQLite.xml
@@ -32,3 +30,5 @@ C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\W\Documents\SAP\DataBaseHandler\obj\Debug\SAP.DataBaseHandler.csprojResolveAssemblyReference.cache
 C:\Users\W\Documents\SAP\DataBaseHandler\obj\Debug\DataBaseHandler.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\obj\Debug\DataBaseHandler.pdb
+M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.dll
+M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.pdb

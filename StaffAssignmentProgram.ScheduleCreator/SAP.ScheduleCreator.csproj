@@ -230,9 +230,9 @@
       <Project>{757b8d09-6dad-45f8-aad1-b7acf37f9bd3}</Project>
       <Name>SAP.DataBaseHandler</Name>
     </ProjectReference>
-    <ProjectReference Include="..\StaffAssignmentProgram.Common\StaffAssignmentProgram.Common.csproj">
+    <ProjectReference Include="..\StaffAssignmentProgram.Common\SAP.Common.csproj">
       <Project>{8660D00C-8ECE-47F5-A4F5-60377D01D1EC}</Project>
-      <Name>StaffAssignmentProgram.Common</Name>
+      <Name>SAP.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

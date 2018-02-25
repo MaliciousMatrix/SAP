@@ -67,9 +67,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StaffAssignmentProgram.Common\StaffAssignmentProgram.Common.csproj">
+    <ProjectReference Include="..\StaffAssignmentProgram.Common\SAP.Common.csproj">
       <Project>{8660d00c-8ece-47f5-a4f5-60377d01d1ec}</Project>
-      <Name>StaffAssignmentProgram.Common</Name>
+      <Name>SAP.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

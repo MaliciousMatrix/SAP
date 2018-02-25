@@ -10,6 +10,12 @@ namespace SAP.Common
 	{
 		public StaffMember(string fullName, int idNumber, DateTime birthday, string phoneNumber, string email, List<Preference> preferences, string nickName = null)
 		{
+			if (idNumber < 0)
+				throw new ArgumentOutOfRangeException("idNumber must be an integer greater than zero.");
+
+			if (String.IsNullOrWhiteSpace(fullName))
+				throw new ArgumentOutOfRangeException("fullName must have a value other than null or whitespace.");
+
 			FullName = fullName;
 			IdNumber = idNumber;
 			Birthday = birthday;
@@ -95,6 +101,11 @@ namespace SAP.Common
 		public bool HasCabin()
 		{
 			return AssignedCabin != null && !AssignedCabin.Equals(Cabin.None);
+		}
+
+		public bool Equals(StaffMember staff)
+		{
+			return this.FullName == staff.FullName && this.NickName == staff.NickName && this.IdNumber == staff.IdNumber;
 		}
         
         public static  StaffMember None { get; } = new StaffMember("None", noneMemberId);

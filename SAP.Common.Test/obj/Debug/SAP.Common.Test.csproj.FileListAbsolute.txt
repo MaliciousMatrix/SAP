@@ -1,0 +1,9 @@
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.pdb
+M:\Documents\sap\SAP.Common.Test\bin\Debug\nunit.framework.dll
+M:\Documents\sap\SAP.Common.Test\bin\Debug\nunit.framework.xml
+M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.csprojResolveAssemblyReference.cache
+M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.dll
+M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.pdb
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.dll
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.pdb

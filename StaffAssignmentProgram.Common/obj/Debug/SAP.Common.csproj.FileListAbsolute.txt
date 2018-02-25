@@ -1,0 +1,5 @@
+M:\Documents\sap\StaffAssignmentProgram.Common\bin\Debug\SAP.Common.dll
+M:\Documents\sap\StaffAssignmentProgram.Common\bin\Debug\SAP.Common.pdb
+M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\SAP.Common.csprojResolveAssemblyReference.cache
+M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\SAP.Common.dll
+M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\SAP.Common.pdb
