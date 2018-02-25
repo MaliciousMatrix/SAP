@@ -18,11 +18,9 @@ C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\DataBaseHandler.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\DataBaseHandler.pdb
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\EntityFramework.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\StaffAssignmentProgram.Common.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\System.Data.SQLite.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\System.Data.SQLite.EF6.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\StaffAssignmentProgram.Common.pdb
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\EntityFramework.xml
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\System.Data.SQLite.xml
@@ -32,3 +30,5 @@ C:\Users\W\Documents\SAP\DataBaseHandler\obj\Debug\DataBaseHandler.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\obj\Debug\DataBaseHandler.pdb
 M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.pdb
+C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\SAP.Common.dll
+C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\SAP.Common.pdb

@@ -67,14 +67,12 @@ C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\Entity
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.Platform.dll
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.EF6.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\DataBaseHandler.pdb
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\DataBaseHandler.dll.config
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.Common.pdb
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.xml
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\GalaSoft.MvvmLight.pdb
@@ -120,3 +118,5 @@ C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffA
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.dll
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.pdb

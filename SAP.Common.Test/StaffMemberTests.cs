@@ -107,8 +107,6 @@ namespace SAP.Common.Test
 			Assert.AreNotEqual(s1, s4);
 			Assert.AreNotEqual(s1, s5);
 			Assert.AreNotEqual(s1, s6);
-
-
 		}
 	}
 }

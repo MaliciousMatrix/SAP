@@ -8,13 +8,18 @@ namespace SAP.Common
 {
 	public class Time
 	{
-		public DayOfWeek Day { get; set; }
+        public Time(DayOfWeek day, double hour)
+        {
+            Day = day;
+            Hour = hour;
+        }
+		public DayOfWeek Day { get; private set; }
 
 		private double _hour;
 		public double Hour
 		{
 			get => _hour;
-			set
+			private set
 			{
 				if (value >= 0 && value < 24)
 					_hour = value;
@@ -34,13 +39,13 @@ namespace SAP.Common
 
 			if (!getAsMilitary)
 			{
-				postfix = (hour >= 12) ? "pm" : "am";
+				postfix = (hour >= 12) ? " pm" : " am";
 				hour %= 12;
-				if (hour == 0)
-					hour += 12;
-			}
+                if (hour == 0)
+                    hour += 12;
+            }
 
-			return $"{hour}:{minute} {postfix}";
+            return ($"{hour}:{minute}{postfix}");
 
 		}
 
@@ -48,6 +53,16 @@ namespace SAP.Common
 		{
 			return other.Day == this.Day && other.Hour == this.Hour;
 		}
+
+        public static bool operator ==(Time first, Time second)
+        {
+            return first.Equals(second);
+        }
+
+        public static bool operator !=(Time first, Time second)
+        {
+            return !(first.Equals(second));
+        }
 
 		public static bool operator > (Time first, Time second)
 		{
@@ -57,9 +72,21 @@ namespace SAP.Common
 				return false;
 			return first.Hour > second.Hour;
 		}
+
 		public static bool operator < (Time first, Time second)
 		{
-			return !(first > second) && !first.Equals(second); 
+			return !(first > second) && first != second; 
 		}
+
+        public static bool operator >= (Time first, Time second)
+        {
+            return first > second || first == second;
+        }
+
+        public static bool operator <= (Time first, Time second)
+        {
+            return first < second || first == second;
+        }
+
 	}
 }

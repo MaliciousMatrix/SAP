@@ -43,12 +43,55 @@ namespace SAP.Common.Test
 		}
 
 		[Test]
-		public void TestInvalidIdNumber()
+        [TestCaseSource(nameof(GetInvalidNameList))]
+		public void TestInvalidName(string name)
 		{
 			try
 			{
-				Cabin cabin = new Cabi
+                Cabin cabin = new Cabin(0, name, "Loop", 1, false);
 			}
+            catch (ArgumentOutOfRangeException)
+            {
+                Assert.Pass();
+            }
+            Assert.Fail();
 		}
-	}
+
+        private List<string> GetInvalidNameList()
+        {
+            return new List<string>()
+            {
+                "  ",
+                null,
+                String.Empty,
+                "\n",
+                "                        ",
+                " "
+            };
+        }
+
+        public void TestEquals()
+        {
+            Cabin c1 = new Cabin(1, "Hennepin", "Lower", 1, false);
+            Cabin c2 = new Cabin(1, "Hennepin", "Lower", 1, true);
+            Cabin c3 = new Cabin(1, "Jolliet", "Lower", 1, false);
+            Cabin c4 = new Cabin(4, "Hennepin", "Lower", 1, false);
+            Cabin c5 = new Cabin(1, "Hennepin", "Upper", 1, false);
+            Cabin c6 = new Cabin(3, "Jolliet", "Timerframe", 1, false);
+
+            Assert.AreEqual(c1, c1);
+            Assert.AreEqual(c1, c2);
+            Assert.AreEqual(c2, c2);
+            Assert.AreEqual(c3, c3);
+            Assert.AreEqual(c4, c4);
+            Assert.AreEqual(c5, c5);
+            Assert.AreEqual(c6, c6);
+
+            Assert.AreNotEqual(c1, c3);
+            Assert.AreNotEqual(c1, c4);
+            Assert.AreNotEqual(c1, c5);
+            Assert.AreNotEqual(c1, c6);
+
+        }
+    }
 }
