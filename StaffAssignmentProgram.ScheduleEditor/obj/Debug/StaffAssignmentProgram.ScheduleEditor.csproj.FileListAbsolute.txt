@@ -12,20 +12,6 @@ M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.Sched
 M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
 M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
 M:\Documents\Camp Olson YMCA\StaffAssignmentProgram\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe.config
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csprojResolveAssemblyReference.cache
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.g.cs
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\App.g.cs
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.cache
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.lref
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.baml
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.g.resources
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.Properties.Resources.resources
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
-M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe.config
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
@@ -40,3 +26,17 @@ C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAs
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe.config
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.exe
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\bin\Debug\StaffAssignmentProgram.ScheduleEditor.pdb
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csprojResolveAssemblyReference.cache
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.g.cs
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\App.g.cs
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.cache
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor_MarkupCompile.lref
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\MainWindow.baml
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.g.resources
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.Properties.Resources.resources
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.csproj.GenerateResource.Cache
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.exe
+M:\Documents\sap\StaffAssignmentProgram.ScheduleEditor\obj\Debug\StaffAssignmentProgram.ScheduleEditor.pdb

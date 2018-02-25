@@ -1,0 +1,9 @@
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\bin\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings.dll
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\bin\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings.pdb
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings.dll
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings.pdb
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\GenerationSettingsControl.g.cs
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings_MarkupCompile.cache
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings_MarkupCompile.lref
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\GenerationSettingsControl.baml
+M:\Documents\sap\SAP.ScheduleCreator.MWUC.GenerationSettings\obj\Debug\SAP.ScheduleCreator.MWUC.GenerationSettings.g.resources

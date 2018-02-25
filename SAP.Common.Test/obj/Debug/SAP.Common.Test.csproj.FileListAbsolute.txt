@@ -1,12 +1,3 @@
-M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll
-M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.pdb
-M:\Documents\sap\SAP.Common.Test\bin\Debug\nunit.framework.dll
-M:\Documents\sap\SAP.Common.Test\bin\Debug\nunit.framework.xml
-M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.csprojResolveAssemblyReference.cache
-M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.dll
-M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.pdb
-M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.dll
-M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.pdb
 C:\Users\W\Documents\SAP\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll
 C:\Users\W\Documents\SAP\SAP.Common.Test\bin\Debug\SAP.Common.Test.pdb
 C:\Users\W\Documents\SAP\SAP.Common.Test\bin\Debug\nunit.framework.dll
@@ -16,5 +7,14 @@ C:\Users\W\Documents\SAP\SAP.Common.Test\bin\Debug\nunit.framework.xml
 C:\Users\W\Documents\SAP\SAP.Common.Test\obj\Debug\SAP.Common.Test.csprojResolveAssemblyReference.cache
 C:\Users\W\Documents\SAP\SAP.Common.Test\obj\Debug\SAP.Common.Test.dll
 C:\Users\W\Documents\SAP\SAP.Common.Test\obj\Debug\SAP.Common.Test.pdb
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.pdb
+M:\Documents\sap\SAP.Common.Test\bin\Debug\nunit.framework.dll
 M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Activity.dll
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.dll
 M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Activity.pdb
+M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.pdb
+M:\Documents\sap\SAP.Common.Test\bin\Debug\nunit.framework.xml
+M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.csprojResolveAssemblyReference.cache
+M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.dll
+M:\Documents\sap\SAP.Common.Test\obj\Debug\SAP.Common.Test.pdb

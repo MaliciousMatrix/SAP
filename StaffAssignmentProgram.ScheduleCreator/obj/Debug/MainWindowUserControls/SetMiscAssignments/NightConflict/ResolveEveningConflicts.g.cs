@@ -60,8 +60,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.NightCon
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StaffAssignmentProgram.ScheduleCreator;component/mainwindowusercontrols/setmisca" +
-                    "ssignments/nightconflict/resolveeveningconflicts.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SAP.ScheduleCreator;component/mainwindowusercontrols/setmiscassignments/nightcon" +
+                    "flict/resolveeveningconflicts.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -30,7 +30,6 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.ProgramAreaSettings
 		public override void Initialize(ScheduleCreationInfo scheduleCreationInfo)
 		{
 			base.Initialize(scheduleCreationInfo);
-			InitDefaultUIValues();
 
 			_activeProgramAreas = scheduleCreationInfo.ActiveWorkAreas.Where(x => x.IsProgramArea).ToLocationViewModel();
 			LocationViewModel.Advance = this.Advance;
@@ -50,64 +49,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.ProgramAreaSettings
 
 		public override void Resolve()
 		{
-			scheduleCreationInfo.NumberOnCampfire = new int[]
-			{
-				numberOnCampfire, // Sunday
-				numberOnCampfire, // Monday
-				numberOnCampfire, // Tuesday
-				numberOnCampfire, // Wednesday
-				numberOnCampfire, // Thursday
-				numberOnCampfire, // Friday
-			};
-
-			scheduleCreationInfo.NumberOnQuiteCabin = new int[]
-			{
-				numberOnQuietCabin, // Sunday
-				numberOnQuietCabin, // Monday
-				numberOnQuietCabin, // Tuesday
-				numberOnQuietCabin, // Wednesday
-				numberOnQuietCabin, // Thursday
-				numberOnQuietCabin // Friday
-			};
-
-			scheduleCreationInfo.NumberOnDishes = new int[,]
-			{
-				{ // Sunday
-					0,
-					0,
-					numberOnDishes,
-				},
-				{ // Monday
-					numberOnDishes,
-					numberOnDishes,
-					numberOnDishes,
-				},
-				{ // Tuesday
-					numberOnDishes,
-					numberOnDishes,
-					numberOnDishes,
-				},
-				{ // Wednesday
-					numberOnDishes,
-					numberOnDishes,
-					numberOnDishes,
-				},
-				{ // Thursdsay
-					numberOnDishes,
-					numberOnDishes,
-					numberOnDishes,
-				},
-				{ // Friday
-					numberOnDishes,
-					numberOnDishes,
-					numberOnDishes,
-				},
-				{ // Saturday
-					numberOnDishes,
-					0,
-					0,
-				},
-			};
+			
 		}
         
         private ObservableCollection<LocationViewModel> _activeProgramAreas;
@@ -131,16 +73,6 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.ProgramAreaSettings
 			return total == 100;
 		}
 
-		private void InitDefaultUIValues()
-		{
-			AssignHalfOff = true;
-			TakePreferencesIntoAccount = true;
-			NumberOnDishes = "4";
-			NumberOnCampfire = "4";
-			NumberOnQuietCabin = "2";
-			StaffTypeOnEveningDishes = "P-Staff";
-		}
-
 		private bool _assignHalfOff;
 		public bool AssignHalfOff
 		{
@@ -148,65 +80,6 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.ProgramAreaSettings
 			set
 			{
 				_assignHalfOff = value;
-				RaisePropertyChanged();
-			}
-		}
-
-		private bool _takePreferencesIntoAccount;
-		public bool TakePreferencesIntoAccount
-		{
-			get => _takePreferencesIntoAccount;
-			set
-			{
-				_takePreferencesIntoAccount = value;
-				RaisePropertyChanged();
-			}
-		}
-
-		private int numberOnDishes;
-		public string NumberOnDishes
-		{
-			get
-			{
-				return numberOnDishes.ToString();
-			}
-			set
-			{
-				int val = numberOnDishes;
-				Int32.TryParse(value, out val);
-				numberOnDishes = val;
-				RaisePropertyChanged();
-			}
-		}
-
-		private int numberOnCampfire;
-		public string NumberOnCampfire
-		{
-			get
-			{
-				return numberOnCampfire.ToString();
-			}
-			set
-			{
-				int val = numberOnCampfire;
-				Int32.TryParse(value, out val);
-				numberOnCampfire = val;
-				RaisePropertyChanged();
-			}
-		}
-
-		private int numberOnQuietCabin;
-		public string NumberOnQuietCabin
-		{
-			get
-			{
-				return numberOnQuietCabin.ToString();
-			}
-			set
-			{
-				int val = numberOnQuietCabin;
-				Int32.TryParse(value, out val);
-				numberOnQuietCabin = val;
 				RaisePropertyChanged();
 			}
 		}

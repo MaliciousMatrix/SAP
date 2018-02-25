@@ -16,10 +16,12 @@ namespace SAP.Common
 		public int[] NumberOnQuiteCabin { get; set; }
 		public int[,] NumberOnDishes { get; set; }
 
-		public int[] NumberOnTradingPost { get; set; }
-		public int[] NumberOnPowerUp { get; set; }
+		public int[] NumberOnTradingPost { get; set; } 
+		public int[] NumberOnPowerUp { get; set; } 
 
-		public int[] NumberOnFlagLowering { get; set; }
+		public int[] NumberOnFlagLowering { get; set; } 
 		public int[] NumberOnFlagRaising { get; set; }
+
+		public int[] NumberOnGrace { get; set; }
 	}
 }

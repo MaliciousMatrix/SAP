@@ -52,8 +52,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetCabinSchedules {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StaffAssignmentProgram.ScheduleCreator;component/mainwindowusercontrols/setcabin" +
-                    "schedules/setcabinschedulescontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SAP.ScheduleCreator;component/mainwindowusercontrols/setcabinschedules/setcabins" +
+                    "chedulescontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

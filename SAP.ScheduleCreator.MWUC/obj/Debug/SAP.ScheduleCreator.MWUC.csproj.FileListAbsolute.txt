@@ -1,0 +1,5 @@
+M:\Documents\sap\SAP.ScheduleCreator.MWUC\bin\Debug\SAP.ScheduleCreator.MWUC.dll
+M:\Documents\sap\SAP.ScheduleCreator.MWUC\bin\Debug\SAP.ScheduleCreator.MWUC.pdb
+M:\Documents\sap\SAP.ScheduleCreator.MWUC\obj\Debug\SAP.ScheduleCreator.MWUC.dll
+M:\Documents\sap\SAP.ScheduleCreator.MWUC\obj\Debug\SAP.ScheduleCreator.MWUC.pdb
+M:\Documents\sap\SAP.ScheduleCreator.MWUC\obj\Debug\SAP.ScheduleCreator.MWUC.csprojResolveAssemblyReference.cache

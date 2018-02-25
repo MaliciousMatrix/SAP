@@ -109,8 +109,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAnd
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StaffAssignmentProgram.ScheduleCreator;component/mainwindowusercontrols/selectac" +
-                    "tivestaffmembersandcabins/selectactivemembers/selectactivememberscontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SAP.ScheduleCreator;component/mainwindowusercontrols/selectactivestaffmembersand" +
+                    "cabins/selectactivemembers/selectactivememberscontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveMembers\SelectActiveMembersControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1,6 +1,7 @@
 ﻿using SAP.Common;
 using SAP.ScheduleCreator.MainWindowUserControls;
 using SAP.ScheduleCreator.MainWindowUserControls.AssignStaffToCabinsAndPStaff;
+using SAP.ScheduleCreator.MainWindowUserControls.GenerationSettings;
 using SAP.ScheduleCreator.MainWindowUserControls.ProgramAreaSettings;
 using SAP.ScheduleCreator.MainWindowUserControls.ReviewSelectedStaffAndCabins;
 using SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAndCabins;
@@ -127,6 +128,10 @@ namespace SAP.ScheduleCreator
 			ProgramAreaSettings.ScreenNumber = screens.Count();
 			screens.Add(ProgramAreaSettings);
 
+			GenerationSettings = GenerationSettingsViewModel.Instance;
+			GenerationSettings.ScreenNumber = screens.Count();
+			screens.Add(GenerationSettings);
+
 			SetMiscAssignments = SetMiscAssignmentsViewModel.Instance;
 			SetMiscAssignments.ScreenNumber = screens.Count();
 			screens.Add(SetMiscAssignments);
@@ -195,6 +200,17 @@ namespace SAP.ScheduleCreator
 			set
 			{
 				_programAreaSettings = value;
+				RaisePropertyChanged();
+			}
+		}
+
+		private GenerationSettingsViewModel _generationSettings;
+		public GenerationSettingsViewModel GenerationSettings
+		{
+			get => _generationSettings;
+			set
+			{
+				_generationSettings = value;
 				RaisePropertyChanged();
 			}
 		}

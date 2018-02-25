@@ -11,7 +11,7 @@
 		xmlns:AssignStaffToCabinsAndPStaff ="clr-namespace:SAP.ScheduleCreator.MainWindowUserControls.AssignStaffToCabinsAndPStaff"
 		xmlns:ProgramAreaSettings ="clr-namespace:SAP.ScheduleCreator.MainWindowUserControls.ProgramAreaSettings"
 		xmlns:SetMiscAssignments="clr-namespace:SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments"
-		
+		xmlns:GenerationSettings="clr-namespace:SAP.ScheduleCreator.MainWindowUserControls.GenerationSettings"
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="1000">
 	<Window.Resources>
@@ -75,6 +75,10 @@
 			
 			<TabItem DataContext="{Binding ProgramAreaSettings}" TabIndex="{Binding ScreenNumber}" Header="{Binding Name}">
 				<ProgramAreaSettings:ProgramAreaSettingsControl/>
+			</TabItem>
+
+			<TabItem DataContext="{Binding GenerationSettings}" TabIndex="{Binding ScreenNumber}" Header="{Binding Name}">
+				<GenerationSettings:GenerationSettingsControl/>
 			</TabItem>
 
 			<TabItem DataContext="{Binding SetMiscAssignments}" TabIndex="{Binding ScreenNumber}" Header="{Binding Name}">

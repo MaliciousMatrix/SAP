@@ -52,8 +52,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.AssignStaffToCabinsAndPStaf
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StaffAssignmentProgram.ScheduleCreator;component/mainwindowusercontrols/assignst" +
-                    "afftocabinsandpstaff/assignstafftocabinsandpstaffcontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SAP.ScheduleCreator;component/mainwindowusercontrols/assignstafftocabinsandpstaf" +
+                    "f/assignstafftocabinsandpstaffcontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

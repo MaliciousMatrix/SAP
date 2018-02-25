@@ -52,8 +52,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.ReviewSelectedStaffAndCabin
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StaffAssignmentProgram.ScheduleCreator;component/mainwindowusercontrols/reviewse" +
-                    "lectedstaffandcabins/reviewselectedstaffandcabinscontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SAP.ScheduleCreator;component/mainwindowusercontrols/reviewselectedstaffandcabin" +
+                    "s/reviewselectedstaffandcabinscontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\MainWindowUserControls\ReviewSelectedStaffAndCabins\ReviewSelectedStaffAndCabinsControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

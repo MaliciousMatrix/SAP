@@ -7,7 +7,7 @@
     <ProjectGuid>{A53AB940-C82E-40E2-8D14-8E567F74EDA2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SAP.ScheduleCreator</RootNamespace>
-    <AssemblyName>StaffAssignmentProgram.ScheduleCreator</AssemblyName>
+    <AssemblyName>SAP.ScheduleCreator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -92,6 +92,10 @@
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="ISelectableViewModel.cs" />
+    <Compile Include="MainWindowUserControls\GenerationSettings\GenerationSettingsControl.xaml.cs">
+      <DependentUpon>GenerationSettingsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindowUserControls\GenerationSettings\GenerationSettingsViewModel.cs" />
     <Compile Include="MainWindowUserControls\ProgramAreaSettings\LocationViewModel.cs" />
     <Compile Include="MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.xaml.cs">
       <DependentUpon>AddEditStaff.xaml</DependentUpon>
@@ -132,6 +136,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindowUserControls\GenerationSettings\GenerationSettingsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
