@@ -54,6 +54,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SAP.Common.Activity\SAP.Common.Activity.csproj">
+      <Project>{829BB520-2603-4468-9A50-9C4CDF354B94}</Project>
+      <Name>SAP.Common.Activity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StaffAssignmentProgram.Common\SAP.Common.csproj">
       <Project>{8660d00c-8ece-47f5-a4f5-60377d01d1ec}</Project>
       <Name>SAP.Common</Name>

@@ -12,3 +12,5 @@ M:\Documents\sap\SAP.ScheduleGenerationEngine\bin\Debug\SAP.Common.dll
 M:\Documents\sap\SAP.ScheduleGenerationEngine\bin\Debug\SAP.Common.pdb
 C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\bin\Debug\SAP.Common.dll
 C:\Users\W\Documents\SAP\SAP.ScheduleGenerationEngine\bin\Debug\SAP.Common.pdb
+M:\Documents\sap\SAP.ScheduleGenerationEngine\bin\Debug\SAP.Common.Activity.dll
+M:\Documents\sap\SAP.ScheduleGenerationEngine\bin\Debug\SAP.Common.Activity.pdb

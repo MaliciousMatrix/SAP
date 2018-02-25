@@ -1,4 +1,5 @@
 ﻿using SAP.Common;
+using SAP.Common.Activity;
 using SAP.ScheduleCreator.MainWindowUserControls.SelectActiveStaffMembersAndCabins.SelectActiveMembers;
 using System;
 using System.Collections.Generic;
@@ -127,6 +128,21 @@ namespace SAP.ScheduleCreator
 			}
 		}
 
+		public IEnumerable<IActivity> Activities
+		{
+			get
+			{
+				return WrappedStaffMember.Activities;
+			}
+		}
+
+		public bool AssignActivity(IActivity activity)
+		{
+			bool returnValue = WrappedStaffMember.AssignActivity(activity);
+			RaisePropertyChanged(nameof(Activities));
+			return returnValue;
+		}
+
 		public ObservableCollection<Preference> Preferences
 		{
 			get
@@ -211,6 +227,6 @@ namespace SAP.ScheduleCreator
 			}
 		}
 
-		public static StaffMemberViewModel RandomStaffMemberSelection = new StaffMemberViewModel(new StaffMember("Random", -1, DateTime.Today, "", "", null));
+		public static StaffMemberViewModel RandomStaffMemberSelection = new StaffMemberViewModel(StaffMember.Random);
 	}
 }

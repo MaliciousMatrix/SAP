@@ -40,8 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity.cs" />
-    <Compile Include="ActivityType.cs" />
     <Compile Include="Cabin.cs" />
     <Compile Include="CabinSchedule.cs" />
     <Compile Include="EveningJob.cs" />
@@ -52,9 +50,12 @@
     <Compile Include="ScheduleCreationInfo.cs" />
     <Compile Include="StaffMember.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Time.cs" />
-    <Compile Include="TimeOfDay.cs" />
-    <Compile Include="TimeSpan.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAP.Common.Activity\SAP.Common.Activity.csproj">
+      <Project>{829BB520-2603-4468-9A50-9C4CDF354B94}</Project>
+      <Name>SAP.Common.Activity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

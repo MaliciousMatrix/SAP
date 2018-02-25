@@ -32,3 +32,5 @@ M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.dll
 M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.pdb
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\SAP.Common.dll
 C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\SAP.Common.pdb
+M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.Activity.dll
+M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.Activity.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SAP.Common.Activity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,8 @@ namespace SAP.Common
 
 		public abstract string Name { get; }
 
-		private List<Activity> _activities;
-		public IEnumerable<Activity> Activities
+		private List<IActivity> _activities;
+		public IEnumerable<IActivity> Activities
 		{
 			get => _activities;
 		}
@@ -30,11 +31,11 @@ namespace SAP.Common
 		/// Adds an activity to the assigned activities in this member. If the member already contains that exact activity then
 		/// The activity is not added and false is returned. True otherwise. 
 		/// </summary>
-		public bool AssignActivity(Activity activity)
+		public bool AssignActivity(IActivity activity)
 		{
 			if(_activities == null)
 			{
-				_activities = new List<Activity>();
+				_activities = new List<IActivity>();
 			}
 
 			if (_activities.Contains(activity))

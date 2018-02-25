@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using SAP.Common.Activity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace SAP.Common.Test
 {
 	[TestFixture]
-	public class TimeSpanTests
+	public class DurationTests
 	{
 		[Test]
 		public void TestCreation()
@@ -16,17 +17,17 @@ namespace SAP.Common.Test
 			Time startTime = new Time(DayOfWeek.Monday, 14.5);
 			Time endTime = new Time(DayOfWeek.Monday, 15.5);
 
-			TimeSpan ts = new TimeSpan(startTime, endTime);
+			Duration ts = new Duration(startTime, endTime);
 			Assert.AreEqual(startTime, ts.StartTime);
 			Assert.AreEqual(endTime, ts.EndTime);
 
 			endTime = new Time(DayOfWeek.Tuesday, 14.5);
-			ts = new TimeSpan(startTime, endTime);
+			ts = new Duration(startTime, endTime);
 			Assert.AreEqual(startTime, ts.StartTime);
 			Assert.AreEqual(endTime, ts.EndTime);
 
 			endTime = new Time(DayOfWeek.Tuesday, 15.5);
-			ts = new TimeSpan(startTime, endTime);
+			ts = new Duration(startTime, endTime);
 			Assert.AreEqual(startTime, ts.StartTime);
 			Assert.AreEqual(endTime, ts.EndTime);
 		} 
@@ -38,7 +39,7 @@ namespace SAP.Common.Test
 			Time endTime = new Time(DayOfWeek.Sunday, 15.5);
 			try
 			{
-				TimeSpan ts = new TimeSpan(startTime, endTime);
+				Duration ts = new Duration(startTime, endTime);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -52,7 +53,7 @@ namespace SAP.Common.Test
 			endTime = new Time(DayOfWeek.Monday, 13);
 			try
 			{
-				TimeSpan ts = new TimeSpan(startTime, endTime);
+				Duration ts = new Duration(startTime, endTime);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -63,7 +64,7 @@ namespace SAP.Common.Test
 		}
 
 		[Test]
-		public void TestConflictingTimeSpans()
+		public void TestConflictingDurations()
 		{
 			Time t1 = new Time(DayOfWeek.Tuesday, 10);
 			Time t2 = new Time(DayOfWeek.Tuesday, 11);
@@ -72,40 +73,40 @@ namespace SAP.Common.Test
 
 			// X-----------------X
 			//           X----------------X
-			TimeSpan ts1 = new TimeSpan(t1, t3);
-			TimeSpan ts2 = new TimeSpan(t2, t4);
+			Duration ts1 = new Duration(t1, t3);
+			Duration ts2 = new Duration(t2, t4);
 			Assert.IsTrue(ts1.ConfilctsWith(ts2));
 			Assert.IsTrue(ts2.ConfilctsWith(ts1));
 
 			// X-----------------------------X
 			//        X-------------X
-			ts1 = new TimeSpan(t1, t4);
-			ts2 = new TimeSpan(t2, t3);
+			ts1 = new Duration(t1, t4);
+			ts2 = new Duration(t2, t3);
 			Assert.IsTrue(ts2.ConfilctsWith(ts1));
 			Assert.IsTrue(ts1.ConfilctsWith(ts2));
 
 			// X----------------X
 			// X--------X
-			ts2 = new TimeSpan(t1, t3);
+			ts2 = new Duration(t1, t3);
 			Assert.IsTrue(ts1.ConfilctsWith(ts2));
 			Assert.IsTrue(ts2.ConfilctsWith(ts1));
 
 			// X--------------X
 			//          X-----X
-			ts2 = new TimeSpan(t3, t4);
+			ts2 = new Duration(t3, t4);
 			Assert.IsTrue(ts1.ConfilctsWith(ts2));
 			Assert.IsTrue(ts2.ConfilctsWith(ts1));
 
 			// X----------X
 			// X----------X
-			ts2 = new TimeSpan(t1, t4);
+			ts2 = new Duration(t1, t4);
 			Assert.IsTrue(ts1.ConfilctsWith(ts2));
 			Assert.IsTrue(ts2.ConfilctsWith(ts1));
 
 			// X------------X
 			//              X----------X
-			ts1 = new TimeSpan(t1, t2);
-			ts2 = new TimeSpan(t2, t3);
+			ts1 = new Duration(t1, t2);
+			ts2 = new Duration(t2, t3);
 			Assert.IsTrue(ts1.ConfilctsWith(ts2, true));
 			Assert.IsTrue(ts2.ConfilctsWith(ts1, true));
 
@@ -114,7 +115,7 @@ namespace SAP.Common.Test
 
 			// X-------X
 			//                 X-------X
-			ts2 = new TimeSpan(t3, t4);
+			ts2 = new Duration(t3, t4);
 			Assert.IsFalse(ts1.ConfilctsWith(ts2));
 			Assert.IsFalse(ts2.ConfilctsWith(ts1));
 		}

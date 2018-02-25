@@ -11,7 +11,7 @@ namespace SAP.Common
 		public StaffMember(string fullName, int idNumber, DateTime birthday, string phoneNumber, string email, List<Preference> preferences, string nickName = null)
 		{
 			if (idNumber < 0)
-				throw new ArgumentOutOfRangeException("idNumber must be an integer greater than zero.");
+				throw new ArgumentOutOfRangeException("StaffMember idNumber must be an integer greater than zero.");
 
 			if (String.IsNullOrWhiteSpace(fullName))
 				throw new ArgumentOutOfRangeException("fullName must have a value other than null or whitespace.");

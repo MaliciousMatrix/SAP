@@ -1,4 +1,5 @@
 ﻿using SAP.Common;
+using SAP.Common.Activity;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,7 +12,7 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
 {
     public class MiscAssignmentViewModel : ViewModelBase
     {
-        public MiscAssignmentViewModel(Activity activity, IEnumerable<IMember> activeMembers, int size)
+        public MiscAssignmentViewModel(IActivity activity, IEnumerable<IMember> activeMembers, int size)
         {
             AddMember = new DelegateCommand(ExecuteAddMember);
             DeleteMember = new DelegateCommand(ExecuteDeleteMember);
@@ -37,8 +38,8 @@ namespace SAP.ScheduleCreator.MainWindowUserControls.SetMiscAssignments.Assignme
 			}
 		}
 
-		private Activity _activity;
-		public Activity AssignedActivity
+		private IActivity _activity;
+		public IActivity AssignedActivity
 		{
 			get => _activity;
 		}

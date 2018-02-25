@@ -230,6 +230,10 @@
       <Project>{757b8d09-6dad-45f8-aad1-b7acf37f9bd3}</Project>
       <Name>SAP.DataBaseHandler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SAP.Common.Activity\SAP.Common.Activity.csproj">
+      <Project>{829BB520-2603-4468-9A50-9C4CDF354B94}</Project>
+      <Name>SAP.Common.Activity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StaffAssignmentProgram.Common\SAP.Common.csproj">
       <Project>{8660D00C-8ECE-47F5-A4F5-60377D01D1EC}</Project>
       <Name>SAP.Common</Name>

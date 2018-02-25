@@ -1,0 +1,5 @@
+M:\Documents\sap\SAP.Common.Activity\obj\Debug\SAP.Common.Activity.csprojResolveAssemblyReference.cache
+M:\Documents\sap\SAP.Common.Activity\bin\Debug\SAP.Common.Activity.dll
+M:\Documents\sap\SAP.Common.Activity\bin\Debug\SAP.Common.Activity.pdb
+M:\Documents\sap\SAP.Common.Activity\obj\Debug\SAP.Common.Activity.dll
+M:\Documents\sap\SAP.Common.Activity\obj\Debug\SAP.Common.Activity.pdb

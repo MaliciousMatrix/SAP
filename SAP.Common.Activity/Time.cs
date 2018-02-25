@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SAP.Common
+namespace SAP.Common.Activity
 {
 	public class Time
 	{
-        public Time(DayOfWeek day, double hour)
-        {
-            Day = day;
-            Hour = hour;
-        }
+		public Time(DayOfWeek day, double hour)
+		{
+			Day = day;
+			Hour = hour;
+		}
 		public DayOfWeek Day { get; private set; }
 
 		private double _hour;
@@ -41,10 +41,10 @@ namespace SAP.Common
 			{
 				postfix = (hour >= 12) ? " pm" : " am";
 				hour %= 12;
-                if (hour == 0)
-                    hour += 12;
-            }
-            return ($"{GetHoursString(hour, getAsMilitary)}:{GetMinutesAsString(minute)}{postfix}");
+				if (hour == 0)
+					hour += 12;
+			}
+			return ($"{GetHoursString(hour, getAsMilitary)}:{GetMinutesAsString(minute)}{postfix}");
 
 		}
 
@@ -68,17 +68,17 @@ namespace SAP.Common
 			return other.Day == this.Day && other.Hour == this.Hour;
 		}
 
-        public static bool operator ==(Time first, Time second)
-        {
-            return first.Equals(second);
-        }
+		public static bool operator ==(Time first, Time second)
+		{
+			return first.Equals(second);
+		}
 
-        public static bool operator !=(Time first, Time second)
-        {
-            return !(first.Equals(second));
-        }
+		public static bool operator !=(Time first, Time second)
+		{
+			return !(first.Equals(second));
+		}
 
-		public static bool operator > (Time first, Time second)
+		public static bool operator >(Time first, Time second)
 		{
 			if ((int)first.Day > (int)second.Day)
 				return true;
@@ -87,20 +87,19 @@ namespace SAP.Common
 			return first.Hour > second.Hour;
 		}
 
-		public static bool operator < (Time first, Time second)
+		public static bool operator <(Time first, Time second)
 		{
-			return !(first > second) && first != second; 
+			return !(first > second) && first != second;
 		}
 
-        public static bool operator >= (Time first, Time second)
-        {
-            return first > second || first == second;
-        }
+		public static bool operator >=(Time first, Time second)
+		{
+			return first > second || first == second;
+		}
 
-        public static bool operator <= (Time first, Time second)
-        {
-            return first < second || first == second;
-        }
-
+		public static bool operator <=(Time first, Time second)
+		{
+			return first < second || first == second;
+		}
 	}
 }

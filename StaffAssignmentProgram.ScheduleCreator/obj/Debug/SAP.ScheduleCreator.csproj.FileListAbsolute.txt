@@ -120,3 +120,5 @@ M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.dll
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.pdb
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.pdb
+M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.Activity.dll
+M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.Activity.pdb

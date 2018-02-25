@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SAP.Common.Activity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace SAP.Common
 		string Name { get; }
 		int IdNumber { get; }
 		bool IsRealMember();
-		IEnumerable<Activity> Activities { get; }
-		bool AssignActivity(Activity activity);
+		IEnumerable<IActivity> Activities { get; }
+		bool AssignActivity(IActivity activity);
 	}
 }
