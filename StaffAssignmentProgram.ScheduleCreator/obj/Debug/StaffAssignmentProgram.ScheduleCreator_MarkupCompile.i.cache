@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\
+M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\obj\Debug\
 SAP.ScheduleCreator
 none
 false
 DEBUG;TRACE
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\App.xaml
+M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\App.xaml
 111750924183
 
 46-1344078016
-77-238338713
+771948649605
 MainWindow.xaml;MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.xaml;MainWindowUserControls\ProgramAreaSettings\ProgramAreaSettingsControl.xaml;MainWindowUserControls\ReviewSelectedStaffAndCabins\ReviewSelectedStaffAndCabinsControl.xaml;MainWindowUserControls\SelectActiveStaffMembersAndCabins\AddEditStaff\AddEditStaff.xaml;MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveMembers\SelectActiveMembersControl.xaml;MainWindowUserControls\SelectActiveStaffMembersAndCabins\SelectActiveStaffMembersAndCabinsControl.xaml;MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.xaml;MainWindowUserControls\SetMiscAssignments\Assignment\EveningAssignmentControl.xaml;MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.xaml;MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.xaml;
 
 True

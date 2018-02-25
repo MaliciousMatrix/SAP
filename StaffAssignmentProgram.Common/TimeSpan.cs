@@ -10,7 +10,7 @@ namespace SAP.Common
 	{
 		public TimeSpan(Time startTime, Time endTime)
 		{
-			if (endTime >= startTime)
+			if (endTime <= startTime)
 				throw new ArgumentOutOfRangeException("End time must be greater than start time.");
 
 			EndTime = endTime;
@@ -21,14 +21,14 @@ namespace SAP.Common
 
         private static bool PrivateConflictsWith(TimeSpan t1, TimeSpan t2)
         {
-            if (t2.StartTime >= t1.StartTime && t2.StartTime <= t1.EndTime)
+            if (t2.StartTime > t1.StartTime && t2.StartTime < t1.EndTime)
             {
                 return true;
             }
-            if(t2.EndTime >= t1.StartTime && t2.EndTime <= t1.EndTime)
-            {
-                return true;
-            }
+            //if(t2.EndTime > t1.StartTime && t2.EndTime < t1.EndTime)
+            //{
+            //    return true;
+            //}
 
             return false;
         }
@@ -39,6 +39,8 @@ namespace SAP.Common
                 if (this.StartTime == timeSpan.EndTime || this.EndTime == timeSpan.StartTime)
                     return true;
             }
+			if (this.StartTime == timeSpan.StartTime || this.EndTime == timeSpan.EndTime)
+				return true;
 
             // Much easier than writing out all logic twice :)
             return PrivateConflictsWith(this, timeSpan) || PrivateConflictsWith(timeSpan, this);           

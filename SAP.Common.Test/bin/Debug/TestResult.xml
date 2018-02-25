@@ -1,65 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll" total="11" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-02-24" time="14:21:25">
+<test-results name="M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-02-24" time="23:35:00">
   <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8825" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\WINDOWS\system32" machine-name="ICECUBE" user="W" user-domain="ICECUBE" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll" executed="True" result="Success" success="True" time="0.069" asserts="0">
+  <test-suite type="Assembly" name="M:\Documents\sap\SAP.Common.Test\bin\Debug\SAP.Common.Test.dll" executed="True" result="Success" success="True" time="0.026" asserts="0">
     <results>
-      <test-suite type="Namespace" name="SAP" executed="True" result="Success" success="True" time="0.063" asserts="0">
+      <test-suite type="Namespace" name="SAP" executed="True" result="Success" success="True" time="0.020" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Common" executed="True" result="Success" success="True" time="0.063" asserts="0">
+          <test-suite type="Namespace" name="Common" executed="True" result="Success" success="True" time="0.020" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.062" asserts="0">
+              <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.020" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="CabinTests" executed="True" result="Success" success="True" time="0.017" asserts="0">
+                  <test-suite type="TestFixture" name="TimeSpanTests" executed="True" result="Success" success="True" time="0.019" asserts="0">
                     <results>
-                      <test-case name="SAP.Common.Test.CabinTests.TestCreation" executed="True" result="Success" success="True" time="0.012" asserts="0" />
-                    </results>
-                  </test-suite>
-                  <test-suite type="TestFixture" name="StaffMemberTests" executed="True" result="Success" success="True" time="0.043" asserts="0">
-                    <results>
-                      <test-case name="SAP.Common.Test.StaffMemberTests.TestCreation" executed="True" result="Success" success="True" time="0.011" asserts="6" />
-                      <test-case name="SAP.Common.Test.StaffMemberTests.TestEquals" executed="True" result="Success" success="True" time="0.004" asserts="11" />
-                      <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidIdNumber" executed="True" result="Success" success="True" time="0.008" asserts="0">
-                        <reason>
-                          <message><![CDATA[]]></message>
-                        </reason>
-                      </test-case>
-                      <test-suite type="ParameterizedTest" name="TestInvalidName" executed="True" result="Success" success="True" time="0.011" asserts="0">
-                        <results>
-                          <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidName(&quot;  &quot;)" executed="True" result="Success" success="True" time="0.001" asserts="0">
-                            <reason>
-                              <message><![CDATA[]]></message>
-                            </reason>
-                          </test-case>
-                          <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidName(null)" executed="True" result="Success" success="True" time="0.000" asserts="0">
-                            <reason>
-                              <message><![CDATA[]]></message>
-                            </reason>
-                          </test-case>
-                          <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidName(&quot;&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="0">
-                            <reason>
-                              <message><![CDATA[]]></message>
-                            </reason>
-                          </test-case>
-                          <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidName(&quot;\n&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="0">
-                            <reason>
-                              <message><![CDATA[]]></message>
-                            </reason>
-                          </test-case>
-                          <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidName(&quot;                        &quot;)" executed="True" result="Success" success="True" time="0.000" asserts="0">
-                            <reason>
-                              <message><![CDATA[]]></message>
-                            </reason>
-                          </test-case>
-                          <test-case name="SAP.Common.Test.StaffMemberTests.TestInvalidName(&quot; &quot;)" executed="True" result="Success" success="True" time="0.000" asserts="0">
-                            <reason>
-                              <message><![CDATA[]]></message>
-                            </reason>
-                          </test-case>
-                        </results>
-                      </test-suite>
-                      <test-case name="SAP.Common.Test.StaffMemberTests.TestName" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="SAP.Common.Test.TimeSpanTests.TestConflictingTimeSpans" executed="True" result="Success" success="True" time="0.014" asserts="16" />
                     </results>
                   </test-suite>
                 </results>

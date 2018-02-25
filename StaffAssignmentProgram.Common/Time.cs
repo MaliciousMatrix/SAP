@@ -35,7 +35,7 @@ namespace SAP.Common
 			string postfix = String.Empty;
 
 			hour = (int)Hour;
-			minute = (int)(Hour - hour) * 60;
+			minute = (int)((Hour - hour) * 60);
 
 			if (!getAsMilitary)
 			{
@@ -44,9 +44,23 @@ namespace SAP.Common
                 if (hour == 0)
                     hour += 12;
             }
+            return ($"{GetHoursString(hour, getAsMilitary)}:{GetMinutesAsString(minute)}{postfix}");
 
-            return ($"{hour}:{minute}{postfix}");
+		}
 
+		private string GetHoursString(int hours, bool getAsMilitary)
+		{
+			string s = hours.ToString();
+			if (!getAsMilitary || s.Length == 2)
+				return s;
+			return "0" + s;
+		}
+		private string GetMinutesAsString(int minutes)
+		{
+			string s = minutes.ToString();
+			while (s.Length < 2)
+				s = "0" + s;
+			return s;
 		}
 
 		public bool Equals(Time other)

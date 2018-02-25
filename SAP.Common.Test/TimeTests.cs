@@ -65,12 +65,12 @@ namespace SAP.Common.Test
             return new List<Tuple<double, bool, string>>()
             {
                 new Tuple<double, bool, string>(6, false, "6:00 am"),
-                new Tuple<double, bool, string>(6, true, "6:00"),
+                new Tuple<double, bool, string>(6, true, "06:00"),
                 new Tuple<double, bool, string>(8.25, false, "8:15 am"),
-                new Tuple<double, bool, string>(8.25, true, "8:15"),
-                new Tuple<double, bool, string>(0, true, "0:00"),
+                new Tuple<double, bool, string>(8.25, true, "08:15"),
+                new Tuple<double, bool, string>(0, true, "00:00"),
                 new Tuple<double, bool, string>(0, false, "12:00 am"),
-                new Tuple<double, bool, string>(0.75, true, "0:45"),
+                new Tuple<double, bool, string>(0.75, true, "00:45"),
                 new Tuple<double, bool, string>(0.75, false, "12:45 am"),
                 new Tuple<double, bool, string>(12.5, false, "12:30 pm"),
                 new Tuple<double, bool, string>(12.5, true, "12:30"),
