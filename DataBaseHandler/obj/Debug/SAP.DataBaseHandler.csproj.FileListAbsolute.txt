@@ -34,3 +34,5 @@ M:\Documents\sap\DataBaseHandler\bin\Debug\SAP.Common.Activity.pdb
 M:\Documents\sap\DataBaseHandler\obj\Debug\SAP.DataBaseHandler.csprojResolveAssemblyReference.cache
 M:\Documents\sap\DataBaseHandler\obj\Debug\DataBaseHandler.dll
 M:\Documents\sap\DataBaseHandler\obj\Debug\DataBaseHandler.pdb
+C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\SAP.Common.Activity.dll
+C:\Users\W\Documents\SAP\DataBaseHandler\bin\Debug\SAP.Common.Activity.pdb

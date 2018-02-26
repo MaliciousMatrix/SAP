@@ -10,10 +10,10 @@ namespace SAP.Common.Activity
 	{
 		protected internal ActivityBase(DayOfWeek day)
 		{
-			Time = CreateDuration(day, StartTime, EndTime);
+			TimeSpan = CreateDuration(day, StartTime, EndTime);
 		}
 
-		public Duration Time { get; protected set; }
+		public Duration TimeSpan { get; protected set; }
 
 		public abstract ActivityType Type { get; }
 
@@ -21,7 +21,7 @@ namespace SAP.Common.Activity
 		{
 			get
 			{
-				return Time.StartTime.Day | Time.EndTime.Day;
+				return TimeSpan.StartTime.Day | TimeSpan.EndTime.Day;
 			}
 		}
 
@@ -30,12 +30,12 @@ namespace SAP.Common.Activity
 
 		public bool ConflictsWith(IActivity activity)
 		{
-			return this.Time.ConfilctsWith(activity.Time);
+			return this.TimeSpan.ConfilctsWith(activity.TimeSpan);
 		}
 
 		public bool Equals(IActivity activity)
 		{
-			return activity.Type == this.Type && activity.Time == this.Time;
+			return activity.Type == this.Type && activity.TimeSpan == this.TimeSpan;
 		}
 
 		//public override string ToString()

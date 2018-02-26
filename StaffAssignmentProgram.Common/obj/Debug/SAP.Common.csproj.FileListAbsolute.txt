@@ -10,3 +10,5 @@ M:\Documents\sap\StaffAssignmentProgram.Common\bin\Debug\SAP.Common.Activity.pdb
 M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\SAP.Common.csprojResolveAssemblyReference.cache
 M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\SAP.Common.dll
 M:\Documents\sap\StaffAssignmentProgram.Common\obj\Debug\SAP.Common.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\bin\Debug\SAP.Common.Activity.dll
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.Common\bin\Debug\SAP.Common.Activity.pdb

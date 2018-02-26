@@ -56,6 +56,7 @@
     <Compile Include="LunchDishesActivity.cs" />
     <Compile Include="LunchGraceActivity.cs" />
     <Compile Include="NightOffActivity.cs" />
+    <Compile Include="OvernightActivity.cs" />
     <Compile Include="PowerUpActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuietCabinActivity.cs" />

@@ -1,6 +1,3 @@
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.exe.config
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.exe
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\CommonServiceLocator.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\DataBaseHandler.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\EntityFramework.dll
@@ -41,8 +38,6 @@ C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWi
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.g.cs
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\App.g.cs
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator_MarkupCompile.cache
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator_MarkupCompile.lref
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\App.baml
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindow.baml
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\AssignStaffToCabinsAndPStaff\AssignStaffToCabinsAndPStaffControl.baml
@@ -52,11 +47,8 @@ C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWi
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetCabinSchedules\SetCabinSchedulesControl.baml
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\NightConflict\ResolveEveningConflicts.baml
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\SetMiscAssignments\SetMiscAssignmentsControl.baml
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.g.resources
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.Properties.Resources.resources
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.csproj.GenerateResource.Cache
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.exe
-C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\StaffAssignmentProgram.ScheduleCreator.pdb
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.dll
 C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.pdb
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.csprojResolveAssemblyReference.cache
@@ -124,3 +116,15 @@ M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCr
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.csproj.GenerateResource.Cache
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.exe
 M:\Documents\sap\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.ScheduleCreator.exe.config
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.ScheduleCreator.exe
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.ScheduleCreator.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.Activity.dll
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\bin\Debug\SAP.Common.Activity.pdb
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\GenerationSettings\GenerationSettingsControl.g.cs
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator_MarkupCompile.cache
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator_MarkupCompile.lref
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\MainWindowUserControls\GenerationSettings\GenerationSettingsControl.baml
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.g.resources
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.exe
+C:\Users\W\Documents\SAP\StaffAssignmentProgram.ScheduleCreator\obj\Debug\SAP.ScheduleCreator.pdb

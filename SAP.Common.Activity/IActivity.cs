@@ -8,7 +8,7 @@ namespace SAP.Common.Activity
 {
 	public interface IActivity
 	{
-		Duration Time { get; }
+		Duration TimeSpan { get; }
 		ActivityType Type { get; }
 		DayOfWeek Day { get; }
 

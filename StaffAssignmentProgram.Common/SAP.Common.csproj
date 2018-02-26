@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cabin.cs" />
+    <Compile Include="CabinCoverageActivity.cs" />
     <Compile Include="CabinSchedule.cs" />
     <Compile Include="EveningJob.cs" />
     <Compile Include="IMember.cs" />
