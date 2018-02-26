@@ -46,6 +46,7 @@
     <Compile Include="ActivityType.cs" />
     <Compile Include="BreakfastDishesActivity.cs" />
     <Compile Include="BreakfastGraceActivity.cs" />
+    <Compile Include="CabinCoverageActivity.cs" />
     <Compile Include="CampfireActivity.cs" />
     <Compile Include="DinnerDishesActivity.cs" />
     <Compile Include="DinnerGraceActivity.cs" />
